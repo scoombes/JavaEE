@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class TeamsServlet
  */
-@WebServlet("/")
+@WebServlet("/teams")
 public class TeamsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -29,7 +29,7 @@ public class TeamsServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 	    java.io.PrintWriter out = response.getWriter();
 
-	    out.println("Hello, Manny!");
+	    out.println("Hello, world! POTATO?");
 	    out.close();
 	}
 
