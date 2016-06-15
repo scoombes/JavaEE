@@ -1,6 +1,8 @@
 package com.seanjohn.nhl;
 
 import java.io.IOException;
+
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,8 +21,10 @@ public class CompleteGamesServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setHeader("X-Servlet-Name", getServletName());
-	    java.io.PrintWriter out = response.getWriter();
-	    out.println("Hello, world! POTATO?");
-	    out.close();
+
+        String url = "/games.jsp";
+        ServletContext sc = getServletContext();
+        sc.getRequestDispatcher(url).forward(request, response);
+
 	}
 }
