@@ -1,6 +1,7 @@
 <%@tag description="Overall Page template" pageEncoding="UTF-8"%>
 <%@attribute name="menu" fragment="true" %>
 <%@attribute name="footer" fragment="true" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
