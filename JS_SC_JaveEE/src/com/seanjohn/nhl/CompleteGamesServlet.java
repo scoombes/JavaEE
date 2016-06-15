@@ -10,30 +10,17 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class CompleteGamesServlet
  */
-@WebServlet("/completegames")
+@WebServlet({"/completegames", "/CompleteGames"})
 public class CompleteGamesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public CompleteGamesServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+	    response.setHeader("X-Servlet-Name", getServletName());
+	    java.io.PrintWriter out = response.getWriter();
+	    out.println("Hello, world! POTATO?");
+	    out.close();
 	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	}
-
 }
