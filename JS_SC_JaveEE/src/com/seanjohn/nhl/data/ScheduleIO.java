@@ -24,7 +24,6 @@ public class ScheduleIO extends GenericIO {
 	 */
 	public ScheduleIO(String username, String password) {
 		super(username, password);
-		// TODO Auto-generated constructor stub
 	}
 
 	public class TeamIO extends GenericIO {

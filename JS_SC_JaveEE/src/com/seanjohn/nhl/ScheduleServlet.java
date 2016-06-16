@@ -45,9 +45,8 @@ public class ScheduleServlet extends HttpServlet {
 	    try {
 			upcomingGames = sched.getUpcomingGames();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			ServletContext context = this.getServletContext();
-			context.log("getTeams", e);
+			context.log(getServletName(), e);
 			upcomingGames = new ArrayList<Game>();
 		}
 	    

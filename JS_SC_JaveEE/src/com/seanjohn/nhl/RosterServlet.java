@@ -51,10 +51,8 @@ public class RosterServlet extends HttpServlet {
 				roster = rosterIO.getRoster(teamid);
 				teamName = rosterIO.getTeam(teamid);
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
 				ServletContext context = this.getServletContext();
-				context.log("getRoster", e);
+				context.log(getServletName(), e);
 				roster = new ArrayList<Roster>();
 			}
 	    	 

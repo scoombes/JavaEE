@@ -7,7 +7,6 @@
 package com.seanjohn.nhl;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -22,7 +21,6 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.DispatcherType;
 
 import com.seanjohn.nhl.data.GenericIO;
-import com.seanjohn.nhl.data.TeamIO;
 
 /**
  * Servlet Filter implementation class Authenticate
@@ -42,7 +40,6 @@ public class Authenticate implements Filter {
      * Default constructor.
      */
     public Authenticate() {
-        // TODO Auto-generated constructor stub
     }
 
 	/**

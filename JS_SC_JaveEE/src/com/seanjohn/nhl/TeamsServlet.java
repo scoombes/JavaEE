@@ -45,9 +45,8 @@ public class TeamsServlet extends HttpServlet {
 	    try {
 			teams = teamIO.getTeams();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			ServletContext context = this.getServletContext();
-			context.log("getTeams", e);
+			context.log(getServletName(), e);
 			teams = new ArrayList<Team>();
 		}
 	    
