@@ -1,3 +1,9 @@
+/*
+ *   Document   : Authenticate.java
+ *   Created on : June 15, 2016
+ *   Authors    : John Steel & Sean Coombes
+ */
+
 package com.seanjohn.nhl;
 
 import java.io.IOException;

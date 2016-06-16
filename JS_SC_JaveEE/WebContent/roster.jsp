@@ -12,7 +12,7 @@
     <jsp:body>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Roster</h1>
+                <h1>Roster of the ${teamName}</h1>
             </div>
         </div>
         <div class="row">

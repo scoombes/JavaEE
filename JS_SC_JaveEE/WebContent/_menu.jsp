@@ -13,7 +13,7 @@
                         <a href="standings">Standings</a>
                     </li>
                     <li>
-                        <a href="completegames">Games</a>
+                        <a href="completegames">Completed Games</a>
                     </li>
                 </ul>
             </div>

@@ -1,3 +1,9 @@
+/*
+ *   Document   : RosterServlet.java
+ *   Created on : June 15, 2016
+ *   Authors    : John Steel & Sean Coombes
+ */
+
 package com.seanjohn.nhl;
 
 import java.io.IOException;
@@ -43,9 +49,11 @@ public class RosterServlet extends HttpServlet {
 		    		    
 	    	RosterIO rosterIO = new RosterIO(user, pass);
 	    	ArrayList<Roster> roster;
-	         
+	        String teamName = ""; 
+	    	
 	    	try {
 				roster = rosterIO.getRoster(teamid);
+				teamName = rosterIO.getTeam(teamid);
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -56,6 +64,7 @@ public class RosterServlet extends HttpServlet {
 	    	 
 	         
 	         request.setAttribute("roster", roster);
+	         request.setAttribute("teamName", teamName);
 		}
 	    
         String url = "/roster.jsp";

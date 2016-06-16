@@ -13,6 +13,21 @@ public class RosterIO extends GenericIO {
 		super(username, password);
 	}
 	
+	public String getTeam(String teamId) throws SQLException{
+		PreparedStatement ps = this.db
+				.prepareStatement("SELECT TEAMNAME " +
+								  "FROM TEAM " +
+								  "WHERE TEAMID = ? ");
+		ps.setString(1, teamId);
+		ResultSet rs = ps.executeQuery();
+		String teamName = "";
+		while (rs.next()) {
+			teamName = rs.getString(1);
+		}
+		
+		return teamName;
+	}
+	
 	public ArrayList<Roster> getRoster(String teamId) throws SQLException {
         PreparedStatement ps = this.db
 
@@ -33,9 +48,7 @@ public class RosterIO extends GenericIO {
             player.setPosition(rs.getString(2));
             player.setJersey(rs.getLong(3));
             roster.add(player);
-        }
-        
+        }      
         return roster;
     }
-	
 }
