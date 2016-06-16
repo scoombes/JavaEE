@@ -4,14 +4,11 @@ import java.io.Serializable;
 
 public class Team implements Serializable {
   private String teamid;
-  private String league;
-  private String sponsor;
   private String teamname;
-  private Long headcoach;
-  private Long asstcoach;
-  private Long trainer;
-  private Long manager;
-  private String website;
+  private String headcoach;
+  private String asstcoach;
+  private String trainer;
+  private String manager;
 
   public String getTeamid() {
     return teamid;
@@ -19,22 +16,6 @@ public class Team implements Serializable {
 
   public void setTeamid(String teamid) {
     this.teamid = teamid;
-  }
-
-  public String getLeague() {
-    return league;
-  }
-
-  public void setLeague(String league) {
-    this.league = league;
-  }
-
-  public String getSponsor() {
-    return sponsor;
-  }
-
-  public void setSponsor(String sponsor) {
-    this.sponsor = sponsor;
   }
 
   public String getTeamname() {
@@ -45,43 +26,34 @@ public class Team implements Serializable {
     this.teamname = teamname;
   }
 
-  public Long getHeadcoach() {
+  public String getHeadcoach() {
     return headcoach;
   }
 
-  public void setHeadcoach(Long headcoach) {
+  public void setHeadcoach(String headcoach) {
     this.headcoach = headcoach;
   }
 
-  public Long getAsstcoach() {
+  public String getAsstcoach() {
     return asstcoach;
   }
 
-  public void setAsstcoach(Long asstcoach) {
+  public void setAsstcoach(String asstcoach) {
     this.asstcoach = asstcoach;
   }
 
-  public Long getTrainer() {
+  public String getTrainer() {
     return trainer;
   }
-
-  public void setTrainer(Long trainer) {
+  public void setTrainer(String trainer) {
     this.trainer = trainer;
   }
 
-  public Long getManager() {
+  public String getManager() {
     return manager;
   }
 
-  public void setManager(Long manager) {
+  public void setManager(String manager) {
     this.manager = manager;
-  }
-
-  public String getWebsite() {
-    return website;
-  }
-
-  public void setWebsite(String website) {
-    this.website = website;
   }
 }
