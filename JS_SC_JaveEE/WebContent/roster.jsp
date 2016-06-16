@@ -29,9 +29,9 @@
                 	<tbody>
                 		<c:forEach items="${roster}" var="player">
                 			<tr>
-                				<td>${player.playerid}</td>
-                				<td>${player.firstname}</td>
-                				<td>${player.lastname}</td>
+                				<td>${player.playername}</td>
+                				<td>${player.position}</td>
+                				<td>${player.jersey}</td>
                 			</tr>
                 		</c:forEach>
                 	</tbody>

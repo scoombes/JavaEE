@@ -3,34 +3,17 @@ package com.seanjohn.nhl.business;
 import java.io.Serializable;
 
 public class Roster implements Serializable {
-  private Long rosterid;
-  private Long player;
-  private String team;
+  private String playerName;
   private String position;
   private Long jersey;
 
-  public Long getRosterid() {
-    return rosterid;
+
+  public String getPlayerName() {
+    return playerName;
   }
 
-  public void setRosterid(Long rosterid) {
-    this.rosterid = rosterid;
-  }
-
-  public Long getPlayer() {
-    return player;
-  }
-
-  public void setPlayer(Long player) {
-    this.player = player;
-  }
-
-  public String getTeam() {
-    return team;
-  }
-
-  public void setTeam(String team) {
-    this.team = team;
+  public void setPlayername(String playerName) {
+    this.playerName = playerName;
   }
 
   public String getPosition() {

@@ -27,14 +27,11 @@ public class GenericIO {
 	}
 	
 	protected Connection aquireConnection() {
-	
-		String user = "jsteel";
-		String pass = "password";
-		
+
 		Properties connectionProps = new Properties();
 		try {
-			connectionProps.put(this.username, user);
-			connectionProps.put(this.password, pass);
+			connectionProps.put("user", this.username);
+			connectionProps.put("password", this.password);
 			Class.forName("org.apache.derby.jdbc.ClientDriver");
 			int traceLevel = ClientDataSource.TRACE_STATEMENT_CALLS  | 
 							 ClientDataSource.TRACE_CONNECTION_CALLS | 
@@ -42,6 +39,7 @@ public class GenericIO {
 			String derbyURI = String.format("jdbc:derby://localhost:1527/sample;traceFile=trace.out;"
 					+ "traceLevel=%d", traceLevel);
 			db = DriverManager.getConnection(derbyURI, connectionProps);
+			db.prepareStatement("SET SCHEMA GPAULLEY").executeUpdate();
 		} catch (SQLException e) {
 			System.err.println("Failed to connect to Derby server.");
 			e.printStackTrace();

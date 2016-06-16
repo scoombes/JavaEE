@@ -3,7 +3,6 @@ package com.seanjohn.nhl;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Random;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -15,7 +14,6 @@ import javax.servlet.http.HttpSession;
 
 import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.TeamIO;
-import com.sun.xml.ws.runtime.dev.Session;
 
 /**
  * Servlet implementation class TeamsServlet
@@ -37,6 +35,7 @@ public class TeamsServlet extends HttpServlet {
 	    HttpSession session = request.getSession();
 	    String user = (String)session.getAttribute("plaintextSQLUser");
 	    String pass = (String)session.getAttribute("plaintextSQLPass");
+	    
 	    TeamIO teamIO = new TeamIO(user,pass);
 	    ArrayList<Team> teams;
 	    try {

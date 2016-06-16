@@ -27,9 +27,11 @@
 			    <tbody>
 			     <c:forEach items="${teams}" var="team">
                 			<tr>
-                				<td>${team.teamname}</td>
+                				<td><a href="/JS_SC_JavaEE/roster?teamid=${team.teamid}">${team.teamname}</a></td>
                 				<td>${team.headcoach}</td>
                 				<td>${team.asstcoach}</td>
+                				<td>${team.trainer}</td>
+                				<td>${team.manager}</td>
                 			</tr>
                 		</c:forEach>
 			    </tbody>
