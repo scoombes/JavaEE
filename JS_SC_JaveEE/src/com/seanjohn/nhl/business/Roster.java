@@ -10,6 +10,10 @@ package com.seanjohn.nhl.business;
 import java.io.Serializable;
 
 public class Roster implements Serializable {
+  /**
+	 * 
+	 */
+  private static final long serialVersionUID = 1L;
   private String playerName;
   private String position;
   private Long jersey;

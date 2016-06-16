@@ -4,7 +4,6 @@
  *   Authors    : John Steel & Sean Coombes
  */
 
-
 package com.seanjohn.nhl;
 
 import java.io.IOException;
@@ -35,10 +34,6 @@ public class TeamsServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setHeader("X-Servlet-Name", getServletName());
 
-	    //query db for a list of teams
-	    //take list of teams and display their names and their coaches/management
-	    //make team name a link on the jsp page that redirects 
-	    //Team[] teams = new Team[8];
 	    HttpSession session = request.getSession();
 	    String user = (String)session.getAttribute("plaintextSQLUser");
 	    String pass = (String)session.getAttribute("plaintextSQLPass");

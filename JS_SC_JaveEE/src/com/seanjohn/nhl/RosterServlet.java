@@ -9,8 +9,6 @@ package com.seanjohn.nhl;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Random;
-
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.seanjohn.nhl.business.Roster;
-import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.RosterIO;
 
 /**

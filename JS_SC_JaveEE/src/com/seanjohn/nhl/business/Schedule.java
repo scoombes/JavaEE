@@ -10,6 +10,7 @@ package com.seanjohn.nhl.business;
 import java.io.Serializable;
 
 public class Schedule implements Serializable {
+  private static final long serialVersionUID = 1L;
   private Long scheduleid;
   private String league;
   private String season;

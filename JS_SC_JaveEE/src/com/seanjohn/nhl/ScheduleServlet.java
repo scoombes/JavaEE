@@ -20,9 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.seanjohn.nhl.business.Game;
-import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.ScheduleIO;
-import com.seanjohn.nhl.data.TeamIO;
 
 /**
  * Servlet implementation class ScheduleServlet
