@@ -18,7 +18,14 @@
     <jsp:body>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Roster of the ${teamName}</h1>
+            	<c:choose>
+            		<c:when test="${roster == null}">
+            			<h1 style="color:red">No team found</h1>
+            		</c:when>
+            		<c:otherwise>
+            		<h1>Roster of the ${teamName}</h1>
+            		</c:otherwise>
+            	</c:choose>
             </div>
         </div>
         <div class="row">

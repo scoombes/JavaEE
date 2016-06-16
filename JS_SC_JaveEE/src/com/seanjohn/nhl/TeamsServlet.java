@@ -33,11 +33,13 @@ public class TeamsServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setHeader("X-Servlet-Name", getServletName());
-
+    	
+	    //grabs user data from active session
 	    HttpSession session = request.getSession();
 	    String user = (String)session.getAttribute("plaintextSQLUser");
 	    String pass = (String)session.getAttribute("plaintextSQLPass");
 	    
+	    //gets lists of teams from derby database via TeamIO class
 	    TeamIO teamIO = new TeamIO(user,pass);
 	    ArrayList<Team> teams;
 	    try {
@@ -49,6 +51,7 @@ public class TeamsServlet extends HttpServlet {
 			teams = new ArrayList<Team>();
 		}
 	    
+	    //adds to team to an attribute to be used in the jsp
 	    request.setAttribute("teams", teams);
         String url = "/teams.jsp";
         ServletContext sc = getServletContext();

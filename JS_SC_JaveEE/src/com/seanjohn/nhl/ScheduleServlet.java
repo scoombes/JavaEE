@@ -34,10 +34,12 @@ public class ScheduleServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setHeader("X-Servlet-Name", getServletName());
+	    //gets user log in data for the database
 	    HttpSession session = request.getSession();
 	    String user = (String)session.getAttribute("plaintextSQLUser");
 	    String pass = (String)session.getAttribute("plaintextSQLPass");
 	    
+	    //gets upcoming schedule from 
 	    ScheduleIO sched = new ScheduleIO(user, pass);
 	    ArrayList<Game> upcomingGames;
 	    try {
@@ -48,6 +50,7 @@ public class ScheduleServlet extends HttpServlet {
 			context.log("getTeams", e);
 			upcomingGames = new ArrayList<Game>();
 		}
+	    
 	    
 	    request.setAttribute("upcoming", upcomingGames);
         String url = "/schedule.jsp";

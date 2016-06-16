@@ -35,14 +35,14 @@ public class StandingsServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setHeader("X-Servlet-Name", getServletName());
 
+	    //gets user data from current session
 	    HttpSession session = request.getSession();
 	    String user = (String)session.getAttribute("plaintextSQLUser");
 	    String pass = (String)session.getAttribute("plaintextSQLPass");	    
 	    
-	    
+	    //gets team standings from TeamIon
     	TeamIO teamIO = new TeamIO(user, pass);
-    	ArrayList<Team> teams;
-         
+    	ArrayList<Team> teams;      
     	try {
 			teams = teamIO.getStandings();
 		} catch (SQLException e) {
@@ -51,8 +51,8 @@ public class StandingsServlet extends HttpServlet {
 			teams = new ArrayList<Team>();
 		}
 
-    	request.setAttribute("teams", teams);
-	    
+    	//adds list of teams to be used on jsp
+    	request.setAttribute("teams", teams);    
         String url = "/standings.jsp";
         ServletContext sc = getServletContext();
         sc.getRequestDispatcher(url).forward(request, response);
