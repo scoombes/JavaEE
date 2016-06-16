@@ -11,9 +11,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.TeamIO;
+import com.sun.xml.ws.runtime.dev.Session;
 
 /**
  * Servlet implementation class TeamsServlet
@@ -32,13 +34,17 @@ public class TeamsServlet extends HttpServlet {
 	    //take list of teams and display their names and their coaches/management
 	    //make team name a link on the jsp page that redirects 
 	    //Team[] teams = new Team[8];
-	    TeamIO teamIO = new TeamIO("","");
+	    HttpSession session = request.getSession();
+	    String user = (String)session.getAttribute("plaintextSQLUser");
+	    String pass = (String)session.getAttribute("plaintextSQLPass");
+	    TeamIO teamIO = new TeamIO(user,pass);
 	    ArrayList<Team> teams;
 	    try {
 			teams = teamIO.getTeams();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			ServletContext context = this.getServletContext();
+			context.log("getTeams", e);
 			teams = new ArrayList<Team>();
 		}
 	    

@@ -29,7 +29,7 @@
                 			<tr>
                 				<td>${team.teamname}</td>
                 				<td>${team.headcoach}</td>
-                				<td>${player.lastname}</td>
+                				<td>${team.asstcoach}</td>
                 			</tr>
                 		</c:forEach>
 			    </tbody>
