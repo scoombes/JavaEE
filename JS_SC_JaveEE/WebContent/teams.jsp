@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <t:bootstrappage>
     <jsp:attribute name="menu">
@@ -17,26 +18,20 @@
 			    <thead>
 			      <tr>
 			        <th>Team</th>
-			        <th>Location</th>
-			        <th>Arena</th>
+			        <th>Head Coach</th>
+			        <th>Assistant Coach</th>
+			        <th>Fitness Trainer</th>
+			        <th>Manager</th>
 			      </tr>
 			    </thead>
 			    <tbody>
-			      <tr>
-			        <td>Montreal Canadiens</td>
-			        <td>Montreal, QC</td>
-			        <td>Bell Centre</td>
-			      </tr>
-			      <tr>
-			        <td>Ottawa Senators</td>
-			        <td>Ottawa, ON</td>
-			        <td>Canadian Tire Centre</td>
-			      </tr>
-			      <tr>
-			        <td>Winnipeg Jets</td>
-			        <td>Winnipeg, MB</td>
-			        <td>MTS Centre</td>
-			      </tr>
+			     <c:forEach items="${teams}" var="team">
+                			<tr>
+                				<td>${team.teamname}</td>
+                				<td>${team.headcoach}</td>
+                				<td>${player.lastname}</td>
+                			</tr>
+                		</c:forEach>
 			    </tbody>
 			  </table>
             </div>

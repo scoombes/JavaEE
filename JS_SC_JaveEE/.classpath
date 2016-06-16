@@ -13,5 +13,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/seanc/Desktop/db-derby-10.12.1.1-bin/db-derby-10.12.1.1-bin/lib/derbyclient.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -1,6 +1,8 @@
 package com.seanjohn.nhl;
 
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Random;
 
 import javax.servlet.ServletContext;
@@ -11,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.seanjohn.nhl.business.Team;
+import com.seanjohn.nhl.data.TeamIO;
 
 /**
  * Servlet implementation class TeamsServlet
@@ -28,15 +31,18 @@ public class TeamsServlet extends HttpServlet {
 	    //query db for a list of teams
 	    //take list of teams and display their names and their coaches/management
 	    //make team name a link on the jsp page that redirects 
-	    Team[] teams = new Team[8];
-
-	    for (int i = 0; i < teams.length; i++) {
-	    	Random ran = new Random();
-	    	
-			Team team = new Team();
-			team.setTeamid("lfs" + ran.nextInt(999 - 100 + 1) + 100);
+	    //Team[] teams = new Team[8];
+	    TeamIO teamIO = new TeamIO("","");
+	    ArrayList<Team> teams;
+	    try {
+			teams = teamIO.getTeams();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			teams = new ArrayList<Team>();
 		}
 	    
+	    request.setAttribute("teams", teams);
         String url = "/teams.jsp";
         ServletContext sc = getServletContext();
         sc.getRequestDispatcher(url).forward(request, response);
