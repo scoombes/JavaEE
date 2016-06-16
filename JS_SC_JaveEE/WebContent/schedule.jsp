@@ -17,9 +17,6 @@
 			      <tr>
 			        <th>Date</th>
 			        <th>Matchup</th>
-			        <th>Score</th>
-			        <th>OverTime</th>
-			        <th>Shoot Out</th>
 			        <th>Arena</th>
 			      </tr>
 			    </thead>
@@ -28,9 +25,6 @@
                 			<tr>
                 				<td>${game.gamedate}</td>
                 				<td>${game.visitor} @ ${game.home}</td>
-                				<td>${game.visitorscore} - ${game.homescore}</td>
-                				<td>${game.ot}</td>
-                				<td>${game.so}</td>
                 				<td>${game.arena}</td>
                 			</tr>
                 		</c:forEach>

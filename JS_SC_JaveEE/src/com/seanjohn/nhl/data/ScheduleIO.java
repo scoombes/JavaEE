@@ -31,7 +31,7 @@ public class ScheduleIO extends GenericIO {
 	}
 	
 
-	public ArrayList<Game> getUpcomingGames() throws SQLException {
+	public ArrayList<Game> getCompletedGames() throws SQLException {
         ResultSet rs = this.db
                 .prepareStatement("SELECT g.homescore, g.visitorscore, g.ot, g.so, " +
                 		"g.gamedate, a.arenaname, t1.teamname, t2.teamname " +
@@ -43,10 +43,11 @@ public class ScheduleIO extends GenericIO {
                                   "    JOIN Team t2 " +      
                                   "        ON g.visitor = t2.teamid " +      
                                   "WHERE g.homescore IS NOT null " +      
-                                  "		AND g.visitorscore IS NOT null")                                                                             
+                                  "		AND g.visitorscore IS NOT null " +
+                                  "ORDER BY g.gamedate")                                                                             
                 .executeQuery();
         
-        ArrayList<Game> upcoming = new ArrayList<Game>();
+        ArrayList<Game> completed = new ArrayList<Game>();
         
         // Read & Print records
         while (rs.next()) {
@@ -59,10 +60,39 @@ public class ScheduleIO extends GenericIO {
     		game.setArena(rs.getString(6));
     		game.setHome(rs.getString(7));
     		game.setVisitor(rs.getString(8));
+            completed.add(game);
+        }
+        
+        return completed;
+    }
+	
+	public ArrayList<Game> getUpcomingGames() throws SQLException {
+        ResultSet rs = this.db
+                .prepareStatement("SELECT g.gamedate, a.arenaname, t1.teamname, t2.teamname " +
+                                  "FROM GAME g " +
+                                  "    JOIN ARENA a " +      
+                                  "        ON g.arena = a.arenaid " +      
+                                  "    JOIN Team t1 " +      
+                                  "        ON g.home = t1.teamid " +      
+                                  "    JOIN Team t2 " +      
+                                  "        ON g.visitor = t2.teamid " +      
+                                  "WHERE g.homescore IS null " +      
+                                  "		AND g.visitorscore IS null " +
+                                  "ORDER BY g.gamedate")                                                                             
+                .executeQuery();
+        
+        ArrayList<Game> upcoming = new ArrayList<Game>();
+        
+        // Read & Print records
+        while (rs.next()) {
+        	Game game = new Game();
+    		game.setGamedate(rs.getDate(1));
+    		game.setArena(rs.getString(2));
+    		game.setHome(rs.getString(3));
+    		game.setVisitor(rs.getString(4));
             upcoming.add(game);
         }
         
         return upcoming;
-    }
-		
+	}
 }
