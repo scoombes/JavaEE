@@ -33,9 +33,9 @@
                 <table class="table table-striped">
                 	<thead>
                 		<tr>
-                			<th>Player Id</th>
-                			<th>First Name</th>
-                			<th>Last Name</th>
+                			<th>Name</th>
+                			<th>Position</th>
+                			<th>Jersey Number</th>
                 		</tr>             		
                 	</thead>
                 	<tbody>

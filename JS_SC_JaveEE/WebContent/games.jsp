@@ -25,7 +25,7 @@
 			        <th>Date</th>
 			        <th>Matchup</th>
 			        <th>Score</th>
-			        <th>OverTime</th>
+			        <th>Overtime</th>
 			        <th>Shoot Out</th>
 			        <th>Arena</th>
 			      </tr>

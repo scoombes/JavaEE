@@ -61,7 +61,6 @@ public class Authenticate implements Filter {
         HttpSession session = httpReqiest.getSession();
 		String uri = httpReqiest.getRequestURI();
 		httpResponse.setHeader("X-Authentication-Filter", this.getClass().getName());
-		filterConfig.getServletContext().log(uri);
 
 
 		// Check if it's a file we are happy with
@@ -71,6 +70,9 @@ public class Authenticate implements Filter {
 				return; // Don't continue for static files
 			}
 		}
+		
+		// Log only non-static file requests
+		filterConfig.getServletContext().log(uri);
 
 		String paramUsername = httpReqiest.getParameter("username");
 		String paramPassword = httpReqiest.getParameter("password");
