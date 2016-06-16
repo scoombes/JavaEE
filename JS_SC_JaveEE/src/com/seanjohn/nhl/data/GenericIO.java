@@ -18,7 +18,7 @@ import org.apache.derby.jdbc.ClientDataSource;
  *
  */
 public class GenericIO {
-
+	public boolean connectionFailed = false;
 	protected Connection db = null;
 	protected String username = null;
 	protected String password = null;
@@ -45,12 +45,15 @@ public class GenericIO {
 			db.prepareStatement("SET SCHEMA GPAULLEY").executeUpdate();
 		} catch (SQLException e) {
 			System.err.println("Failed to connect to Derby server.");
+			connectionFailed = true;
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
 			System.err.println("Derby driver not found.");
+			connectionFailed = true;
 			e.printStackTrace();
 		}
 
 		return db;
 	}
+	
 }

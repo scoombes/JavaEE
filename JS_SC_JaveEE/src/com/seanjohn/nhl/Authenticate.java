@@ -7,6 +7,7 @@
 package com.seanjohn.nhl;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -19,6 +20,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.servlet.DispatcherType;
+
+import com.seanjohn.nhl.data.GenericIO;
+import com.seanjohn.nhl.data.TeamIO;
 
 /**
  * Servlet Filter implementation class Authenticate
@@ -81,13 +85,22 @@ public class Authenticate implements Filter {
 		}
 
 		// Check if they have a user/pass. Bad credentials will be used then deleted
-		boolean hasUser = session.getAttribute("plaintextSQLUser") != null;
-		boolean hasPass = session.getAttribute("plaintextSQLPass") != null;
-
+		String sessionUser = (String) session.getAttribute("plaintextSQLUser");
+		String sessionPass = (String) session.getAttribute("plaintextSQLPass");
+		GenericIO io = null;
+		
 		// skip filter when user has credentials in their session
-		if (hasUser && hasPass) {
-			chain.doFilter(request, response);
-			return;
+		if (sessionUser != null && sessionPass != null) {
+			try {
+				io = new GenericIO(sessionUser, sessionPass);
+			} catch (Exception e) {
+				filterConfig.getServletContext().log("New IO Exception", e);
+			}
+			
+			if (io != null && !io.connectionFailed) {
+				chain.doFilter(request, response);
+				return;	
+			}
 		}
 
 		// User hasn't authenticated and this is not a static file
@@ -95,6 +108,12 @@ public class Authenticate implements Filter {
         session.setAttribute("redirectUri", uri);
         // Then send them to the auth page
         httpResponse.setStatus(401); // Unauthorised
+        
+        // If the io connection failed
+        if (io != null && io.connectionFailed) {
+        	request.setAttribute("message", "Credentials invalid.");
+        }
+        
         filterConfig.getServletContext().getRequestDispatcher("/auth.jsp").forward(request, response);
 	}
 

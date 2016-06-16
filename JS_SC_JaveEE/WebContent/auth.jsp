@@ -19,6 +19,7 @@
             <div class="col-lg-12 text-center">
                 <h1>Auth page</h1>
                 <p class="lead">You had better auth!</p>
+                <p style="color:red">${message}</p>
                 <form method='post'>
                  <label>
                         Username
