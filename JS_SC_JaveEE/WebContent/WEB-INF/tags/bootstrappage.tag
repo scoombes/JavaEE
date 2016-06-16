@@ -18,6 +18,10 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Full Calendar CSS -->
+    <link href="css/fullcalendar.min.css" rel="stylesheet">
+    <link href="css/fullcalendar.print.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <style>
     body {
@@ -71,6 +75,10 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <!--  Full Calendar -->
+    <script src='js/moment.min.js'></script>
+    <script src='js/fullcalendar.min.js'></script>
 
 </body>
 
