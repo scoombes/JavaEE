@@ -14,8 +14,7 @@
     <jsp:body>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Standings!</h1>
-                <p>Okay!</p>
+                <h1>Standings</h1>
                 <table class="table table-bordered">
                 <thead>
                   <tr>

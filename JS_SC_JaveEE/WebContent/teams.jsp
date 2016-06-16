@@ -12,8 +12,7 @@
     <jsp:body>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Teams!</h1>
-                <p class="lead">This page will have some teams from a database! Right now they are hard coded.</p>
+                <h1>Teams</h1>
                   <table class="table table-bordered">
 			    <thead>
 			      <tr>
