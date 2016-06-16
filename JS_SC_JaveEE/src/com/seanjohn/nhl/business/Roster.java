@@ -12,7 +12,7 @@ public class Roster implements Serializable {
     return playerName;
   }
 
-  public void setPlayername(String playerName) {
+  public void setPlayerName(String playerName) {
     this.playerName = playerName;
   }
 

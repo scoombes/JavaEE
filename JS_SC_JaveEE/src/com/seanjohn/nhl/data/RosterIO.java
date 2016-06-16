@@ -14,22 +14,22 @@ public class RosterIO extends GenericIO {
 	}
 	
 	public ArrayList<Roster> getRoster(String teamId) throws SQLException {
-        ResultSet rs = this.db
+        PreparedStatement ps = this.db
 
-                .prepareStatement("SELECT p.lastname || ', ' || p.firstname as playername," +
+                .prepareStatement("SELECT p.lastname || ', ' || p.firstname as playername, " +
                 		          "r.position, r.jersey " +
                                   "FROM PLAYER p " +
                                   "    JOIN ROSTER r " +      
                                   "        ON p.playerid = r.player " +      
-                                  "WHERE r.TEAM =" + teamId + ";")                                                                             
-                .executeQuery();
-        
+                                  "WHERE r.TEAM = ? ");
+        ps.setString(1, teamId);
+        ResultSet rs = ps.executeQuery();
         ArrayList<Roster> roster = new ArrayList<Roster>();
         
         // Read & Print records
         while (rs.next()) {
             Roster player = new Roster();
-            player.setPlayername(rs.getString(1));
+            player.setPlayerName(rs.getString(1));
             player.setPosition(rs.getString(2));
             player.setJersey(rs.getLong(3));
             roster.add(player);

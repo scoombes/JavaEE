@@ -36,7 +36,7 @@ public class GenericIO {
 			int traceLevel = ClientDataSource.TRACE_STATEMENT_CALLS  | 
 							 ClientDataSource.TRACE_CONNECTION_CALLS | 
 							 ClientDataSource.TRACE_RESULT_SET_CALLS;
-			String derbyURI = String.format("jdbc:derby://localhost:1527/sample;traceFile=trace.out;"
+			String derbyURI = String.format("jdbc:derby://home.steelcomputers.com:18018/sample;traceFile=trace.out;"
 					+ "traceLevel=%d", traceLevel);
 			db = DriverManager.getConnection(derbyURI, connectionProps);
 			db.prepareStatement("SET SCHEMA GPAULLEY").executeUpdate();

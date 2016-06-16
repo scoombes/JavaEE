@@ -29,7 +29,7 @@
                 	<tbody>
                 		<c:forEach items="${roster}" var="player">
                 			<tr>
-                				<td>${player.playername}</td>
+                				<td>${player.playerName}</td>
                 				<td>${player.position}</td>
                 				<td>${player.jersey}</td>
                 			</tr>
