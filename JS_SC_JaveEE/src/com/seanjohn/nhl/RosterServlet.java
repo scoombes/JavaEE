@@ -19,7 +19,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.seanjohn.nhl.business.Player;
 import com.seanjohn.nhl.business.Roster;
 import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.RosterIO;
