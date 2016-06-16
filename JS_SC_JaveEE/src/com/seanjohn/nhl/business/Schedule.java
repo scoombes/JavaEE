@@ -1,3 +1,10 @@
+/*
+ *   Document   : Schedule.java
+ *   Created on : June 15, 2016
+ *   Authors    : John Steel & Sean Coombes
+ */
+
+
 package com.seanjohn.nhl.business;
 
 import java.io.Serializable;

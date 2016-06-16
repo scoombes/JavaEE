@@ -1,3 +1,10 @@
+/*
+ *   Document   : RosterIO.java
+ *   Created on : June 15, 2016
+ *   Authors    : John Steel & Sean Coombes
+ */
+
+
 package com.seanjohn.nhl.data;
 
 import java.sql.PreparedStatement;
