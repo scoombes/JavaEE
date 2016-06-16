@@ -40,8 +40,7 @@ public class RosterServlet extends HttpServlet {
 	    	HttpSession session = request.getSession();
 		    String user = (String)session.getAttribute("plaintextSQLUser");
 		    String pass = (String)session.getAttribute("plaintextSQLPass");	    
-		    
-		    
+		    		    
 	    	RosterIO rosterIO = new RosterIO(user, pass);
 	    	ArrayList<Roster> roster;
 	         
@@ -55,7 +54,6 @@ public class RosterServlet extends HttpServlet {
 				roster = new ArrayList<Roster>();
 			}
 	    	 
-	       
 	         
 	         request.setAttribute("roster", roster);
 		}

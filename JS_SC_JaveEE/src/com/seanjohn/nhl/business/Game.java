@@ -3,33 +3,16 @@ package com.seanjohn.nhl.business;
 import java.io.Serializable;
 
 public class Game implements Serializable{
-  private Long gameid;
-  private Long schedule;
   private java.sql.Date gamedate;
-  private java.sql.Time gametime;
-  private Long arena;
+  private String arena;
   private String home;
   private String visitor;
-  private Long homescore;
-  private Long visitorscore;
+  private int homescore;
+  private int visitorscore;
   private String ot;
   private String so;
 
-  public Long getGameid() {
-    return gameid;
-  }
 
-  public void setGameid(Long gameid) {
-    this.gameid = gameid;
-  }
-
-  public Long getSchedule() {
-    return schedule;
-  }
-
-  public void setSchedule(Long schedule) {
-    this.schedule = schedule;
-  }
 
   public java.sql.Date getGamedate() {
     return gamedate;
@@ -39,19 +22,11 @@ public class Game implements Serializable{
     this.gamedate = gamedate;
   }
 
-  public java.sql.Time getGametime() {
-    return gametime;
-  }
-
-  public void setGametime(java.sql.Time gametime) {
-    this.gametime = gametime;
-  }
-
-  public Long getArena() {
+  public String getArena() {
     return arena;
   }
 
-  public void setArena(Long arena) {
+  public void setArena(String arena) {
     this.arena = arena;
   }
 
@@ -71,19 +46,19 @@ public class Game implements Serializable{
     this.visitor = visitor;
   }
 
-  public Long getHomescore() {
+  public int getHomescore() {
     return homescore;
   }
 
-  public void setHomescore(Long homescore) {
+  public void setHomescore(int homescore) {
     this.homescore = homescore;
   }
 
-  public Long getVisitorscore() {
+  public int getVisitorscore() {
     return visitorscore;
   }
 
-  public void setVisitorscore(Long visitorscore) {
+  public void setVisitorscore(int visitorscore) {
     this.visitorscore = visitorscore;
   }
 
