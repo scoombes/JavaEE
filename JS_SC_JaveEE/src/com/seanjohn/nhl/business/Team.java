@@ -3,6 +3,10 @@ package com.seanjohn.nhl.business;
 import java.io.Serializable;
 
 public class Team implements Serializable {
+  private Long losses;
+  private Long wins;
+  private Long overtimeLosses;
+  private Long points;
   private String teamid;
   private String teamname;
   private String headcoach;
@@ -55,5 +59,37 @@ public class Team implements Serializable {
 
   public void setManager(String manager) {
     this.manager = manager;
+  }
+  
+  public Long getLosses() {
+    return losses;
+  }
+
+  public void setLosses(Long losses) {
+    this.losses = losses;
+  }
+
+  public Long getWins() {
+    return wins;
+  }
+
+  public void setWins(Long wins) {
+    this.wins = wins;
+  }
+
+  public Long getOvertimeLosses() {
+    return overtimeLosses;
+  }
+
+  public void setOvertimeLosses(Long overtimeLosses) {
+    this.overtimeLosses = overtimeLosses;
+  }
+
+  public Long getPoints() {
+    return points;
+  }
+
+  public void setPoints(Long points) {
+    this.points = points;
   }
 }

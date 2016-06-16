@@ -7,9 +7,6 @@
                         <a href="teams">Teams</a>
                     </li>
                     <li>
-                        <a href="roster">Roster</a>
-                    </li>
-                    <li>
                         <a href="schedule">Schedule</a>
                     </li>
                     <li>

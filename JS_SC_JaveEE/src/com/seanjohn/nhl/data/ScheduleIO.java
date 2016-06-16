@@ -34,7 +34,7 @@ public class ScheduleIO extends GenericIO {
 	public ArrayList<Game> getUpcomingGames() throws SQLException {
         ResultSet rs = this.db
                 .prepareStatement("SELECT g.homescore, g.visitorscore, g.ot, g.so, " +
-                		"g.gamedate, a.arenaname, t1.teamname, t2.teamname" +
+                		"g.gamedate, a.arenaname, t1.teamname, t2.teamname " +
                                   "FROM GAME g " +
                                   "    JOIN ARENA a " +      
                                   "        ON g.arena = a.arenaid " +      
