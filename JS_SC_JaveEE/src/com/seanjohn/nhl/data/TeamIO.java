@@ -64,7 +64,7 @@ public class TeamIO extends GenericIO {
 	
 	public ArrayList<Team> getStandings() throws SQLException {
         ResultSet rs = this.db
-                .prepareStatement("SELECT TEAMNAME, SUM(POINTS) as POINTS, " +
+                .prepareStatement("SELECT TEAMNAME, TEAMID, SUM(POINTS) as POINTS, " +
                                   "  COUNT(case when Result = 'W' then 1 else null end) AS Wins, " +
                                   "  COUNT(case when Result = 'L' then 1 else null end) AS Losses, " +
                                   "  COUNT(case when Result = 'OL' then 1 else null end) AS \"Overtime Losses\" " +
@@ -76,7 +76,8 @@ public class TeamIO extends GenericIO {
                                   "   UNION ALL SELECT HOME as TEAMID, 0 as Points, 'L' as Result  FROM GAME WHERE HOMESCORE < VISITORSCORE AND OT = 'N' " +
                                   "   UNION ALL SELECT VISITOR as TEAMID, 0 as Points, 'L' as Result  FROM GAME WHERE HOMESCORE > VISITORSCORE AND OT = 'N') AS s " +
                                   "  JOIN TEAM t USING(TEAMID) " +
-                                  "GROUP BY TEAMNAME ")                                                                             
+                                  "GROUP BY TEAMNAME, TEAMID " +
+                                  "ORDER BY POINTS DESC, WINS DESC")                                                                             
                 .executeQuery();
         
         ArrayList<Team> teams = new ArrayList<Team>();
@@ -85,10 +86,11 @@ public class TeamIO extends GenericIO {
         while (rs.next()) {
             Team team = new Team();
             team.setTeamname(rs.getString(1));
-            team.setPoints(rs.getLong(2));
-            team.setWins(rs.getLong(3));
-            team.setLosses(rs.getLong(4));
-            team.setOvertimeLosses(rs.getLong(5));
+            team.setTeamid(rs.getString(2));
+            team.setPoints(rs.getLong(3));
+            team.setWins(rs.getLong(4));
+            team.setLosses(rs.getLong(5));
+            team.setOvertimeLosses(rs.getLong(6));
             teams.add(team);
         }
         

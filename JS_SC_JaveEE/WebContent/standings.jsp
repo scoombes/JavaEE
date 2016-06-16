@@ -2,6 +2,7 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="context" value="pageContext.request.contextPath" />
 
 <t:bootstrappage>
     <jsp:attribute name="menu">
@@ -19,20 +20,20 @@
                 <thead>
                   <tr>
                     <th>Team</th>
-                    <th>Head Coach</th>
-                    <th>Assistant Coach</th>
-                    <th>Fitness Trainer</th>
-                    <th>Manager</th>
+                    <th>Points</th>
+                    <th>Wins</th>
+                    <th>Overtime Losses</th>
+                    <th>Losses</th>
                   </tr>
                 </thead>
                 <tbody>
                  <c:forEach items="${teams}" var="team">
                             <tr>
-                                <td><a href="/JS_SC_JavaEE/roster?teamid=${team.teamid}">${team.teamname}</a></td>
-                                <td>${team.headcoach}</td>
-                                <td>${team.asstcoach}</td>
-                                <td>${team.trainer}</td>
-                                <td>${team.manager}</td>
+                                <td><a href="roster?teamid=${team.teamid}">${team.teamname}</a></td>
+                                <td>${team.points}</td>
+                                <td>${team.wins}</td>
+                                <td>${team.losses}</td>
+                                <td>${team.overtimeLosses}</td>
                             </tr>
                         </c:forEach>
                 </tbody>
