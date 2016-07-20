@@ -57,7 +57,7 @@ public class TeamIO extends GenericIO {
         // Read & Print records
         while (rs.next()) {
             Team team = new Team();
-            team.setTeamid(rs.getString(1));
+            team.setTeamId(rs.getString(1));
             team.setTeamname(rs.getString(2));
             team.setHeadcoach(rs.getString(3));
             team.setAsstcoach(rs.getString(4));
@@ -93,7 +93,7 @@ public class TeamIO extends GenericIO {
         while (rs.next()) {
             Team team = new Team();
             team.setTeamname(rs.getString(1));
-            team.setTeamid(rs.getString(2));
+            team.setTeamId(rs.getString(2));
             team.setPoints(rs.getLong(3));
             team.setWins(rs.getLong(4));
             team.setLosses(rs.getLong(5));
