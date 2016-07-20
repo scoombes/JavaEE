@@ -15,10 +15,6 @@ import javax.persistence.Id;
 @Entity
 public class Team implements Serializable {	
   private static final long serialVersionUID = 1L;
-  private Long losses;
-  private Long wins;
-  private Long overtimeLosses;
-  private Long points;
   private String teamId;
   private String teamName;
   private String headCoach;
@@ -72,37 +68,5 @@ public class Team implements Serializable {
 
   public void setManager(String manager) {
     this.manager = manager;
-  }
-  
-  public Long getLosses() {
-    return losses;
-  }
-
-  public void setLosses(Long losses) {
-    this.losses = losses;
-  }
-
-  public Long getWins() {
-    return wins;
-  }
-
-  public void setWins(Long wins) {
-    this.wins = wins;
-  }
-
-  public Long getOvertimeLosses() {
-    return overtimeLosses;
-  }
-
-  public void setOvertimeLosses(Long overtimeLosses) {
-    this.overtimeLosses = overtimeLosses;
-  }
-
-  public Long getPoints() {
-    return points;
-  }
-
-  public void setPoints(Long points) {
-    this.points = points;
   }
 }
