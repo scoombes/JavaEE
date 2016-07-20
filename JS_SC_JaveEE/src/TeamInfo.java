@@ -22,7 +22,7 @@ public class TeamInfo {
 
 		em.getTransaction().begin();
 		@SuppressWarnings("unchecked")
-		List<Team> teams = em.createQuery("from Team", Team.class).getResultList();
+		List<Team> teams = em.createQuery("select t from Team t", Team.class).getResultList();
 		em.getTransaction().commit();
 		for (Team t : teams) {
 			System.out.println(t.getTeamId() + " " + t.getTeamname());
