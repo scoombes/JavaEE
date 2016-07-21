@@ -43,7 +43,7 @@ public class TeamInfo {
 //	    em.getTransaction().commit();
 		for (Roster t : roster) {
 			//for(Roster r :t.getRoster()){
-				System.out.println(t.getPlayer().getFirstName() + " " + t.getPlayer().getLastName() + " " + t.getJersey());
+				System.out.println(t.getPlayer().getFirstName() + " " + t.getPlayer().getLastName() + " " + t.getPosition());
 			//}
 		}
 		

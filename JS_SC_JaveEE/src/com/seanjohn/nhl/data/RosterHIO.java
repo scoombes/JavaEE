@@ -22,7 +22,7 @@ public class RosterHIO extends HibernateIO {
 	}
 	
 	public List<Roster> getRoster(String teamId) throws SQLException {
-		List<Roster> teamRoster = em.createQuery("select t from Roster t where t.team.teamId = :teamId", Roster.class)
+		List<Roster> teamRoster = em.createQuery("select r from Roster r where r.team.teamId = :teamId order by r.jersey", Roster.class)
 				.setParameter("teamId", teamId).getResultList();
 		
 	    em.getTransaction().commit();

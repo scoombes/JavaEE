@@ -5,22 +5,22 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 
 <t:bootstrappage>
-    <jsp:attribute name="menu">
+	<jsp:attribute name="menu">
       <jsp:include page="_menu.jsp" />
     </jsp:attribute>
-    <jsp:attribute name="footer">
+	<jsp:attribute name="footer">
       <jsp:include page="_footer.jsp" />
     </jsp:attribute>
-    <jsp:body>
+	<jsp:body>
         <div class="row">
             <div class="col-lg-12 text-center">
             	<c:choose>
             		<c:when test="${roster == null}">
-            			<h1 style="color:red">No team found</h1>
+            			<h1 style="color: red">No team found</h1>
             		</c:when>
             		<c:otherwise>
             		<h1>Roster of the ${teamName}</h1>
@@ -28,22 +28,158 @@
             	</c:choose>
             </div>
         </div>
+        
+        <div class="row">
+            <div class="col-lg-12 text-center">
+            	<h3>Staff</h3>
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <table class="table table-striped">
                 	<thead>
                 		<tr>
+                			<th>Title</th>
                 			<th>Name</th>
-                			<th>Position</th>
-                			<th>Jersey Number</th>
                 		</tr>             		
                 	</thead>
                 	<tbody>
-                		<c:forEach items="${roster}" var="player">
-                			<tr>
-                				<td>${player.playerName}</td>
-                				<td>${player.position}</td>
-                				<td>${player.jersey}</td>
+               			<tr>     
+               				<td>Head Coach</td>
+               				<td>${headCoach}</td>
+               			</tr>
+               			<tr>     
+               				<td>Assistant Coach</td>
+               				<td>${asstCoach}</td>
+               			</tr>
+               			<tr>     
+               				<td>Head Trainer}</td>
+               				<td>${trainer}</td>
+               			</tr>
+               			<tr>     
+               				<td>General Manager}</td>
+               				<td>${manager}</td>
+               			</tr>
+                	</tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12 text-center">
+            	<h3>Forwards</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <table class="table table-striped">
+                	<thead>
+                		<tr>
+                			<th>Jersey Number</th>
+                			<th>Last Name</th>
+                			<th>First Name</th>
+                			<th>Position</th>
+                			<th>Height</th>
+                			<th>Weight</th>
+                		</tr>             		
+                	</thead>
+                	<tbody>
+                		<c:forEach items="${left}" var="rosterPlayer">
+                			<tr>     
+                				<td>${rosterPlayer.jersey}</td>
+                				<td>${rosterPlayer.player.lastName}</td>
+                				<td>${rosterPlayer.player.firstName}</td>
+                				<td>${rosterPlayer.position}</td>
+                				<td>${rosterPlayer.player.height}</td>
+                				<td>${rosterPlayer.player.weight}</td>
+                			</tr>
+                		</c:forEach>
+                		<c:forEach items="${centre}" var="rosterPlayer">
+                			<tr>     
+                				<td>${rosterPlayer.jersey}</td>
+                				<td>${rosterPlayer.player.lastName}</td>
+                				<td>${rosterPlayer.player.firstName}</td>
+                				<td>${rosterPlayer.position}</td>
+                				<td>${rosterPlayer.player.height}</td>
+                				<td>${rosterPlayer.player.weight}</td>
+                			</tr>
+                		</c:forEach>
+                		<c:forEach items="${right}" var="rosterPlayer">
+                			<tr>     
+                				<td>${rosterPlayer.jersey}</td>
+                				<td>${rosterPlayer.player.lastName}</td>
+                				<td>${rosterPlayer.player.firstName}</td>
+                				<td>${rosterPlayer.position}</td>
+                				<td>${rosterPlayer.player.height}</td>
+                				<td>${rosterPlayer.player.weight}</td>
+                			</tr>
+                		</c:forEach>
+                	</tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12 text-center">
+            	<h3>Defence</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <table class="table table-striped">
+                	<thead>
+                		<tr>
+                			<th>Jersey Number</th>
+                			<th>Last Name</th>
+                			<th>First Name</th>
+                			<th>Position</th>
+                			<th>Height</th>
+                			<th>Weight</th>
+                		</tr>             		
+                	</thead>
+                	<tbody>
+                		<c:forEach items="${defence}" var="rosterPlayer">
+                			<tr>     
+                				<td>${rosterPlayer.jersey}</td>
+                				<td>${rosterPlayer.player.lastName}</td>
+                				<td>${rosterPlayer.player.firstName}</td>
+                				<td>${rosterPlayer.position}</td>
+                				<td>${rosterPlayer.player.height}</td>
+                				<td>${rosterPlayer.player.weight}</td>
+                			</tr>
+                		</c:forEach>
+                	</tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12 text-center">
+            	<h3>Goal Tending</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <table class="table table-striped">
+                	<thead>
+                		<tr>
+                			<th>Jersey Number</th>
+                			<th>Last Name</th>
+                			<th>First Name</th>
+                			<th>Position</th>
+                			<th>Height</th>
+                			<th>Weight</th>
+                		</tr>             		
+                	</thead>
+                	<tbody>
+                		<c:forEach items="${goalie}" var="rosterPlayer">
+                			<tr>     
+                				<td>${rosterPlayer.jersey}</td>
+                				<td>${rosterPlayer.player.lastName}</td>
+                				<td>${rosterPlayer.player.firstName}</td>
+                				<td>${rosterPlayer.position}</td>
+                				<td>${rosterPlayer.player.height}</td>
+                				<td>${rosterPlayer.player.weight}</td>
                 			</tr>
                 		</c:forEach>
                 	</tbody>
