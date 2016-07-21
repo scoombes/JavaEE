@@ -51,7 +51,6 @@ public class RosterIO extends GenericIO {
         // Read & Print records
         while (rs.next()) {
             Roster player = new Roster();
-            player.setPlayerName(rs.getString(1));
             player.setPosition(rs.getString(2));
             player.setJersey(rs.getLong(3));
             roster.add(player);

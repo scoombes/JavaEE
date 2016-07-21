@@ -28,6 +28,28 @@ public class Schedule implements Serializable {
 	private String sponsor;
 	@OneToMany
 	private List<Game> games;
+	@OneToMany
+	private List<PlayerStats> playerStats;
+	
+	public List<PlayerStats> getPlayerStats() {
+		return playerStats;
+	}
+	
+	public void setPlayerStats(List<PlayerStats> playerStats) {
+		this.playerStats = playerStats;
+	}
+	
+	public List<Game> getGames() {
+		return games;
+	}
+
+	public void setGames(List<Game> games) {
+		this.games = games;
+	}
+
+	public void setScheduleId(Long scheduleId) {
+		this.scheduleId = scheduleId;
+	}
 
 	public Long getScheduleId() {
 		return scheduleId;

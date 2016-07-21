@@ -23,8 +23,17 @@ public class Staff implements Serializable {
 	private String mobile;
 	private String email;
 	private String certification;
+	@OneToMany
+	private List<Team> team;
 
-	
+	public List<Team> getTeam() {
+		return team;
+	}
+
+	public void setTeam(List<Team> team) {
+		this.team = team;
+	}
+
 	public long getStaffId() {
 		return staffId;
 	}
@@ -121,7 +130,6 @@ public class Staff implements Serializable {
 		this.certification = certification;
 	}
 
-	@OneToMany
-	private List<Team> team;
+	
 
 }

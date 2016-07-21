@@ -13,6 +13,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+import com.seanjohn.nhl.business.Player;
 import com.seanjohn.nhl.business.Staff;
 import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.HibernateIO;
@@ -23,11 +24,11 @@ public class TeamInfo {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("nhlLeagueContext");
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
-		List<Team> team = em.createQuery("select t from Team t", Team.class).getResultList();
+		List<Player> player = em.createQuery("select t from Player t", Player.class).getResultList();
 		
 	    em.getTransaction().commit();
-		for (Team t : team) {
-			System.out.println(t.getTeamname() + " " + t.getHeadCoach().getFirstName()+ " " + t.getHeadCoach().getLastName());
+		for (Player t : player) {
+			System.out.println(t.getFirstName() + " " + t.getLastName());
 		}
 	}
 }

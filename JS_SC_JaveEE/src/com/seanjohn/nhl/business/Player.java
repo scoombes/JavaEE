@@ -2,9 +2,11 @@ package com.seanjohn.nhl.business;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Player implements Serializable {
@@ -24,6 +26,23 @@ public class Player implements Serializable {
 	private String phone;
 	private String mobile;
 	private String email;
+	@OneToMany
+	private List<PlayerStats> playerStats;
+	@OneToMany
+	private List<Roster> roster;
+	
+	public List<Roster> getRoster() {
+		return roster;
+	}
+	public void setRoster(List<Roster> roster) {
+		this.roster = roster;
+	}
+	public List<PlayerStats> getPlayerStats() {
+		return playerStats;
+	}
+	public void setPlayerStats(List<PlayerStats> playerStats) {
+		this.playerStats = playerStats;
+	}
 	
 	public long getPlayerId() {
 		return playerId;

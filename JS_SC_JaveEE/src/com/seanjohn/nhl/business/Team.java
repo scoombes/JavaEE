@@ -7,11 +7,13 @@
 package com.seanjohn.nhl.business;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Team implements Serializable {
@@ -20,7 +22,6 @@ public class Team implements Serializable {
 	private String teamId;
 	private String teamName;
 	private String webSite;
-
 	@ManyToOne
 	@JoinColumn(name = "headCoach")
 	private Staff headCoach;
@@ -33,6 +34,42 @@ public class Team implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "manager")
 	private Staff manager;
+	@OneToMany
+	private List<Game> games;
+	@OneToMany
+	private List<Roster> roster;
+
+	public String getTeamName() {
+		return teamName;
+	}
+
+	public void setTeamName(String teamName) {
+		this.teamName = teamName;
+	}
+
+	public Staff getAsstcoach() {
+		return asstcoach;
+	}
+
+	public void setAsstcoach(Staff asstcoach) {
+		this.asstcoach = asstcoach;
+	}
+
+	public List<Roster> getRoster() {
+		return roster;
+	}
+
+	public void setRoster(List<Roster> roster) {
+		this.roster = roster;
+	}
+
+	public List<Game> getGames() {
+		return games;
+	}
+
+	public void setGames(List<Game> games) {
+		this.games = games;
+	}
 
 	public String getTeamId() {
 		return teamId;
@@ -64,14 +101,6 @@ public class Team implements Serializable {
 
 	public void setHeadCoach(Staff headCoach) {
 		this.headCoach = headCoach;
-	}
-
-	public Staff getAsstCoach() {
-		return asstcoach;
-	};
-
-	public void setAsstCoach(Staff asstcoach) {
-		this.asstcoach = asstcoach;
 	}
 
 	public Staff getTrainer() {
