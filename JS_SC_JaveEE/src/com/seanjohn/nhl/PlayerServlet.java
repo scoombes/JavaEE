@@ -44,7 +44,7 @@ public class PlayerServlet extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 		String playerId = request.getParameter("playerid");
 		long pId;
-		Player player;
+		Roster player;
 
 		try {
 			pId = Long.parseLong(playerId);
@@ -56,16 +56,16 @@ public class PlayerServlet extends HttpServlet {
 		} else {
 
 			try {
-				PlayerHIO playerIO = new PlayerHIO();
-				player = playerIO.getPlayer(pId);
+				RosterHIO rosterIO = new RosterHIO();
+				player = rosterIO.getPlayer(pId);
 
 			} catch (Exception e) {
 				ServletContext context = this.getServletContext();
 				context.log(getServletName(), e);
-				player = new Player();
+				player = new Roster();
 			}
 
-			request.setAttribute("player", player);
+			request.setAttribute("rosterPlayer", player);
 		}
 
 		String url = "/player.jsp";
