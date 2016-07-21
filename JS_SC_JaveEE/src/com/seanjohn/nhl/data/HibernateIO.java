@@ -37,7 +37,4 @@ public class HibernateIO {
 	public EntityManager getEntityManager(){		
 		return em;
 	}
-	
-	
-	
 }

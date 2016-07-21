@@ -33,6 +33,30 @@ public class Roster implements Serializable {
 	private Long jersey;
 	@OneToMany
 	private List<PlayerStats> playerStats;
+	
+	public int getRosterId() {
+		return rosterId;
+	}
+
+	public void setRosterId(int rosterId) {
+		this.rosterId = rosterId;
+	}
+
+	public Player getPlayer() {
+		return player;
+	}
+
+	public void setPlayer(Player player) {
+		this.player = player;
+	}
+
+	public Team getTeam() {
+		return team;
+	}
+
+	public void setTeam(Team team) {
+		this.team = team;
+	}
 
 	public List<PlayerStats> getPlayerStats() {
 		return playerStats;
