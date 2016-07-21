@@ -86,6 +86,8 @@
                 			<th>Position</th>
                 			<th>Height</th>
                 			<th>Weight</th>
+                			<th></th>
+                			
                 		</tr>             		
                 	</thead>
                 	<tbody>
@@ -97,6 +99,7 @@
                 				<td>${rosterPlayer.position}</td>
                 				<td>${rosterPlayer.player.height}</td>
                 				<td>${rosterPlayer.player.weight}</td>
+                				<td><a href="player?playerid=${rosterPlayer.player.playerId}">See Player</a></td>
                 			</tr>
                 		</c:forEach>
                 	</tbody>
