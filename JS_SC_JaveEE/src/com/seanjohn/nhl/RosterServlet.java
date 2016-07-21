@@ -40,9 +40,9 @@ public class RosterServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		response.setHeader("X-Servlet-Name", getServletName());
 		response.setContentType("text/html;charset=UTF-8");
-		String teamid = request.getParameter("teamid");
+		String teamId = request.getParameter("teamid");
 
-		if (teamid == null) {
+		if (teamId == null) {
 			// there was an error
 		} else {
 
@@ -59,9 +59,8 @@ public class RosterServlet extends HttpServlet {
 			Staff manager = new Staff();
 
 			try {
-				roster = rosterIO.getRoster(teamid);
-				Team team = roster.get(0).getTeam();
-
+				Team team = rosterIO.getTeam(teamId);
+				roster = rosterIO.getRoster(teamId);
 				teamName = team.getTeamname();
 
 				headCoach = team.getHeadCoach();

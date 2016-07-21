@@ -31,7 +31,6 @@ public class HibernateIO {
 	public HibernateIO() {
 		emf = Persistence.createEntityManagerFactory("nhlLeagueContext");
 		em = emf.createEntityManager();
-		em.getTransaction().begin();
 	}
 	
 	public EntityManager getEntityManager(){		

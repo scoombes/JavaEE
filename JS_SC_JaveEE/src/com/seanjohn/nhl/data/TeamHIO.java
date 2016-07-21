@@ -4,7 +4,6 @@
  *   Authors    : John Steel & Sean Coombes
  */
 
-
 package com.seanjohn.nhl.data;
 
 import java.sql.PreparedStatement;
@@ -16,16 +15,9 @@ import java.util.List;
 import com.seanjohn.nhl.business.*;
 
 public class TeamHIO extends HibernateIO {
-
-	public TeamHIO() {
-		super();
-	}
-	
-	
-	public List<Team> getTeams(){
-		List<Team> teams = this.em.createQuery("select t from Team t", Team.class).getResultList();
-		this.em.getTransaction().commit();
-		
+	public List<Team> getTeams() {
+		List<Team> teams = this.em.createQuery("select t from Team t",
+				Team.class).getResultList();
 		return teams;
 	}
 }
