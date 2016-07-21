@@ -54,14 +54,6 @@ public class ScheduleIO extends GenericIO {
         // Read & Print records
         while (rs.next()) {
         	Game game = new Game();
-        	game.setHomescore(rs.getInt(1));
-    		game.setVisitorscore(rs.getInt(2));
-    		game.setOt(rs.getString(3));
-    		game.setSo(rs.getString(4));
-    		game.setGamedate(rs.getDate(5));
-    		game.setArena(rs.getString(6));
-    		game.setHome(rs.getString(7));
-    		game.setVisitor(rs.getString(8));
             completed.add(game);
         }
         
@@ -88,10 +80,6 @@ public class ScheduleIO extends GenericIO {
         // Read & Print records
         while (rs.next()) {
         	Game game = new Game();
-    		game.setGamedate(rs.getDate(1));
-    		game.setArena(rs.getString(2));
-    		game.setHome(rs.getString(3));
-    		game.setVisitor(rs.getString(4));
             upcoming.add(game);
         }
         
