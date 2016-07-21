@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.seanjohn.nhl.business.Roster;
+import com.seanjohn.nhl.business.Staff;
 import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.RosterHIO;
 import com.seanjohn.nhl.data.RosterIO;
@@ -47,32 +48,26 @@ public class RosterServlet extends HttpServlet {
 
 			RosterHIO rosterIO = new RosterHIO();
 			List<Roster> roster;
-			ArrayList<Roster> rosterCentre = new ArrayList<Roster>();
-			ArrayList<Roster> rosterRight = new ArrayList<Roster>();
-			ArrayList<Roster> rosterLeft = new ArrayList<Roster>();
+			ArrayList<Roster> rosterForward = new ArrayList<Roster>();
 			ArrayList<Roster> rosterDefence = new ArrayList<Roster>();
 			ArrayList<Roster> rosterGoalie = new ArrayList<Roster>();
-			
+
 			String teamName = "";
-			String headCoach = "";
-			String asstCoach = "";
-			String trainer = "";
-			String manager = "";
+			Staff headCoach = new Staff();
+			Staff asstCoach = new Staff();
+			Staff trainer = new Staff();
+			Staff manager = new Staff();
 
 			try {
 				roster = rosterIO.getRoster(teamid);
 				Team team = roster.get(0).getTeam();
 
 				teamName = team.getTeamname();
-				
-				headCoach = team.getHeadCoach().getFirstName() + " "
-						+ team.getHeadCoach().getLastName();
-				asstCoach = team.getAsstcoach().getFirstName() + " "
-						+ team.getAsstcoach().getLastName();
-				manager = team.getManager().getFirstName() + " "
-						+ team.getManager().getLastName();
-				trainer = team.getTrainer().getFirstName() + " "
-						+ team.getTrainer().getLastName();
+
+				headCoach = team.getHeadCoach();
+				asstCoach = team.getAsstcoach();
+				manager = team.getManager();
+				trainer = team.getTrainer();
 
 			} catch (SQLException e) {
 				ServletContext context = this.getServletContext();
@@ -84,23 +79,17 @@ public class RosterServlet extends HttpServlet {
 				String position = r.getPosition();
 				if (position.equals("Defence")) {
 					rosterDefence.add(r);
-				} else if (position.equals("Right Wing")) {
-					rosterRight.add(r);
-				} else if (position.equals("Left Wing")) {
-					rosterLeft.add(r);
-				} else if (position.equals("Centre")) {
-					rosterCentre.add(r);
 				} else if (position.equals("Goalie")) {
 					rosterGoalie.add(r);
+				} else {
+					rosterForward.add(r);
 				}
 			}
 
-			request.setAttribute("centre", rosterCentre);
-			request.setAttribute("right", rosterRight);
-			request.setAttribute("left", rosterLeft);
+			request.setAttribute("forward", rosterForward);
 			request.setAttribute("defence", rosterDefence);
 			request.setAttribute("goalie", rosterGoalie);
-			
+
 			request.setAttribute("teamName", teamName);
 			request.setAttribute("headCoach", headCoach);
 			request.setAttribute("asstCoach", asstCoach);

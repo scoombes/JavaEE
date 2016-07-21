@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
             	<c:choose>
-            		<c:when test="${roster == null}">
+            		<c:when test="${teamName == ''}">
             			<h1 style="color: red">No team found</h1>
             		</c:when>
             		<c:otherwise>
@@ -40,25 +40,30 @@
                 	<thead>
                 		<tr>
                 			<th>Title</th>
-                			<th>Name</th>
+                			<th>Last Name</th>
+                			<th>First Name</th>
                 		</tr>             		
                 	</thead>
                 	<tbody>
                			<tr>     
                				<td>Head Coach</td>
-               				<td>${headCoach}</td>
+               				<td>${headCoach.lastName}</td>
+               				<td>${headCoach.firstName}</td>          				
                			</tr>
                			<tr>     
                				<td>Assistant Coach</td>
-               				<td>${asstCoach}</td>
+               				<td>${asstCoach.lastName}</td>
+               				<td>${asstCoach.firstName}</td>
                			</tr>
                			<tr>     
-               				<td>Head Trainer}</td>
-               				<td>${trainer}</td>
+               				<td>Head Trainer</td>
+               				<td>${trainer.lastName}</td>
+               				<td>${trainer.firstName}</td>
                			</tr>
                			<tr>     
-               				<td>General Manager}</td>
-               				<td>${manager}</td>
+               				<td>General Manager</td>
+               				<td>${manager.lastName}</td>
+               				<td>${manager.firstName}</td>
                			</tr>
                 	</tbody>
                 </table>
@@ -84,27 +89,7 @@
                 		</tr>             		
                 	</thead>
                 	<tbody>
-                		<c:forEach items="${left}" var="rosterPlayer">
-                			<tr>     
-                				<td>${rosterPlayer.jersey}</td>
-                				<td>${rosterPlayer.player.lastName}</td>
-                				<td>${rosterPlayer.player.firstName}</td>
-                				<td>${rosterPlayer.position}</td>
-                				<td>${rosterPlayer.player.height}</td>
-                				<td>${rosterPlayer.player.weight}</td>
-                			</tr>
-                		</c:forEach>
-                		<c:forEach items="${centre}" var="rosterPlayer">
-                			<tr>     
-                				<td>${rosterPlayer.jersey}</td>
-                				<td>${rosterPlayer.player.lastName}</td>
-                				<td>${rosterPlayer.player.firstName}</td>
-                				<td>${rosterPlayer.position}</td>
-                				<td>${rosterPlayer.player.height}</td>
-                				<td>${rosterPlayer.player.weight}</td>
-                			</tr>
-                		</c:forEach>
-                		<c:forEach items="${right}" var="rosterPlayer">
+                		<c:forEach items="${forward}" var="rosterPlayer">
                 			<tr>     
                 				<td>${rosterPlayer.jersey}</td>
                 				<td>${rosterPlayer.player.lastName}</td>
