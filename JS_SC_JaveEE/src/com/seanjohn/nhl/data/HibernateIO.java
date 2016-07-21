@@ -25,15 +25,13 @@ import com.seanjohn.nhl.business.Team;
  *
  */
 public class HibernateIO {
-	EntityManagerFactory emf = null;
+	public static EntityManagerFactory emf = null;
 	EntityManager em = null;
 	
 	public HibernateIO() {
-		emf = Persistence.createEntityManagerFactory("nhlLeagueContext");
+		if (emf == null) {
+			emf = Persistence.createEntityManagerFactory("nhlLeagueContext");	
+		}
 		em = emf.createEntityManager();
-	}
-	
-	public EntityManager getEntityManager(){		
-		return em;
 	}
 }
