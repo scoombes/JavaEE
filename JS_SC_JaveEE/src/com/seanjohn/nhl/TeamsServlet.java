@@ -9,6 +9,7 @@ package com.seanjohn.nhl;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -19,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.seanjohn.nhl.business.Team;
+import com.seanjohn.nhl.data.TeamHIO;
 import com.seanjohn.nhl.data.TeamIO;
 
 /**
@@ -36,15 +38,13 @@ public class TeamsServlet extends HttpServlet {
     	
 	    //grabs user data from active session
 	    HttpSession session = request.getSession();
-	    String user = (String)session.getAttribute("plaintextSQLUser");
-	    String pass = (String)session.getAttribute("plaintextSQLPass");
 	    
 	    //gets lists of teams from derby database via TeamIO class
-	    TeamIO teamIO = new TeamIO(user,pass);
-	    ArrayList<Team> teams;
+	    TeamHIO teamIO = new TeamHIO();
+	    List<Team> teams;
 	    try {
 			teams = teamIO.getTeams();
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			ServletContext context = this.getServletContext();
 			context.log(getServletName(), e);
 			teams = new ArrayList<Team>();

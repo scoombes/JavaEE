@@ -6,6 +6,7 @@
 	<persistence-unit name="nhlLeagueContext">
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
+			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:derby://home.steelcomputers.com:18018/sample;traceFile=trace.out;traceLevel=7"/>
 			<property name="javax.persistence.jdbc.user" value="gpaulley" />
 			<property name="javax.persistence.jdbc.password" value="thisPasswordI5supersecure" />

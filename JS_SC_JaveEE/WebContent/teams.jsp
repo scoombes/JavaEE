@@ -32,7 +32,7 @@
 			    <tbody>
 			     <c:forEach items="${teams}" var="team">
                 			<tr>
-                				<td><a href="roster?teamid=${team.teamid}">${team.teamname}</a></td>
+                				<td><a href="roster?teamid=${team.teamId}">${team.teamname}</a></td>
                 				<td>${team.headcoach}</td>
                 				<td>${team.asstcoach}</td>
                 				<td>${team.trainer}</td>

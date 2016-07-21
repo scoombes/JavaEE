@@ -59,10 +59,6 @@ public class TeamIO extends GenericIO {
             Team team = new Team();
             team.setTeamId(rs.getString(1));
             team.setTeamname(rs.getString(2));
-            team.setHeadcoach(rs.getString(3));
-            team.setAsstcoach(rs.getString(4));
-            team.setTrainer(rs.getString(5));
-            team.setManager(rs.getString(6));
             teams.add(team);
         }
         
@@ -94,10 +90,6 @@ public class TeamIO extends GenericIO {
             Team team = new Team();
             team.setTeamname(rs.getString(1));
             team.setTeamId(rs.getString(2));
-            team.setPoints(rs.getLong(3));
-            team.setWins(rs.getLong(4));
-            team.setLosses(rs.getLong(5));
-            team.setOvertimeLosses(rs.getLong(6));
             teams.add(team);
         }
         

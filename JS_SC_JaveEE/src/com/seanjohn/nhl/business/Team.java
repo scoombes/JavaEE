@@ -4,69 +4,89 @@
  *   Authors    : John Steel & Sean Coombes
  */
 
-
 package com.seanjohn.nhl.business;
 
 import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
-public class Team implements Serializable {	
-  private static final long serialVersionUID = 1L;
-  private String teamId;
-  private String teamName;
-  private String headCoach;
-  private String asstcoach;
-  private String trainer;
-  private String manager;
+public class Team implements Serializable {
+	private static final long serialVersionUID = 1L;
+	@Id
+	private String teamId;
+	private String teamName;
+	private String webSite;
 
-  @Id
-  public String getTeamId() {
-    return teamId;
-  }
+	@ManyToOne
+	@JoinColumn(name = "headCoach")
+	private Staff headCoach;
+	@ManyToOne
+	@JoinColumn(name = "asstcoach")
+	private Staff asstcoach;
+	@ManyToOne
+	@JoinColumn(name = "trainer")
+	private Staff trainer;
+	@ManyToOne
+	@JoinColumn(name = "manager")
+	private Staff manager;
 
-  public void setTeamId(String teamId) {
-    this.teamId = teamId;
-  }
+	public String getTeamId() {
+		return teamId;
+	}
 
-  public String getTeamname() {
-    return teamName;
-  }
+	public void setTeamId(String teamId) {
+		this.teamId = teamId;
+	}
 
-  public void setTeamname(String teamname) {
-    this.teamName = teamname;
-  }
+	public String getTeamname() {
+		return teamName;
+	}
 
-  public String getHeadcoach() {
-    return headCoach;
-  }
+	public void setTeamname(String teamname) {
+		this.teamName = teamname;
+	}
 
-  public void setHeadcoach(String headcoach) {
-    this.headCoach = headcoach;
-  }
+	public String getWebSite() {
+		return webSite;
+	}
 
-  public String getAsstcoach() {
-    return asstcoach;
-  }
+	public void setWebSite(String webSite) {
+		this.webSite = webSite;
+	}
 
-  public void setAsstcoach(String asstcoach) {
-    this.asstcoach = asstcoach;
-  }
+	public Staff getHeadCoach() {
+		return headCoach;
+	};
 
-  public String getTrainer() {
-    return trainer;
-  }
-  public void setTrainer(String trainer) {
-    this.trainer = trainer;
-  }
+	public void setHeadCoach(Staff headCoach) {
+		this.headCoach = headCoach;
+	}
 
-  public String getManager() {
-    return manager;
-  }
+	public Staff getAsstCoach() {
+		return asstcoach;
+	};
 
-  public void setManager(String manager) {
-    this.manager = manager;
-  }
+	public void setAsstCoach(Staff asstcoach) {
+		this.asstcoach = asstcoach;
+	}
+
+	public Staff getTrainer() {
+		return trainer;
+	};
+
+	public void setTrainer(Staff trainer) {
+		this.trainer = trainer;
+	}
+
+	public Staff getManager() {
+		return manager;
+	};
+
+	public void setManager(Staff manager) {
+		this.manager = manager;
+	}
 }

@@ -8,12 +8,17 @@
 package com.seanjohn.nhl.business;
 
 import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
 public class Roster implements Serializable {
   /**
 	 * 
 	 */
   private static final long serialVersionUID = 1L;
+  @Id
+  private int rosterId;
   private String playerName;
   private String position;
   private Long jersey;

@@ -13,19 +13,21 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+import com.seanjohn.nhl.business.Staff;
 import com.seanjohn.nhl.business.Team;
+import com.seanjohn.nhl.data.HibernateIO;
+import com.seanjohn.nhl.data.TeamHIO;
 
 public class TeamInfo {
 	public static void main(String[] args) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("nhlLeagueContext");
 		EntityManager em = emf.createEntityManager();
-
 		em.getTransaction().begin();
-		@SuppressWarnings("unchecked")
-		List<Team> teams = em.createQuery("select t from Team t", Team.class).getResultList();
-		em.getTransaction().commit();
-		for (Team t : teams) {
-			System.out.println(t.getTeamId() + " " + t.getTeamname());
+		List<Team> team = em.createQuery("select t from Team t", Team.class).getResultList();
+		
+	    em.getTransaction().commit();
+		for (Team t : team) {
+			System.out.println(t.getTeamname() + " " + t.getHeadCoach().getFirstName()+ " " + t.getHeadCoach().getLastName());
 		}
 	}
 }

@@ -4,88 +4,129 @@
  *   Authors    : John Steel & Sean Coombes
  */
 
-
 package com.seanjohn.nhl.business;
 
 import java.io.Serializable;
+import java.sql.Date;
+import java.sql.Time;
 
-public class Game implements Serializable{
-  /**
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+public class Game implements Serializable {
+	/**
 	 * 
 	 */
-  private static final long serialVersionUID = 1L;
-  private java.sql.Date gamedate;
-  private String arena;
-  private String home;
-  private String visitor;
-  private int homescore;
-  private int visitorscore;
-  private String ot;
-  private String so;
+	private static final long serialVersionUID = 1L;
 
+	@Id
+	private long gameId;
+	@ManyToOne
+	@JoinColumn(name = "schedule")
+	private Schedule schedule;
+	private Date gameDate;
+	private Time gameTime;
+	@ManyToOne
+	@JoinColumn(name = "arena")
+	private Arena arena;
+	@ManyToOne
+	@JoinColumn(name = "home")
+	private Team home;
+	@ManyToOne
+	@JoinColumn(name = "visitor")
+	private Team visitor;
+	private long homeScore;
+	private long visitorScore;
+	private char OT;
+	private char SO;
 
+	public long getGameId() {
+		return gameId;
+	}
 
-  public java.sql.Date getGamedate() {
-    return gamedate;
-  }
+	public void setGameId(long gameId) {
+		this.gameId = gameId;
+	}
 
-  public void setGamedate(java.sql.Date gamedate) {
-    this.gamedate = gamedate;
-  }
+	public Schedule getSchedule() {
+		return schedule;
+	}
 
-  public String getArena() {
-    return arena;
-  }
+	public void setSchedule(Schedule schedule) {
+		this.schedule = schedule;
+	}
 
-  public void setArena(String arena) {
-    this.arena = arena;
-  }
+	public Date getGameDate() {
+		return gameDate;
+	}
 
-  public String getHome() {
-    return home;
-  }
+	public void setGameDate(Date gameDate) {
+		this.gameDate = gameDate;
+	}
 
-  public void setHome(String home) {
-    this.home = home;
-  }
+	public Time getGameTime() {
+		return gameTime;
+	}
 
-  public String getVisitor() {
-    return visitor;
-  }
+	public void setGameTime(Time gameTime) {
+		this.gameTime = gameTime;
+	}
 
-  public void setVisitor(String visitor) {
-    this.visitor = visitor;
-  }
+	public Arena getArena() {
+		return arena;
+	}
 
-  public int getHomescore() {
-    return homescore;
-  }
+	public void setArena(Arena arena) {
+		this.arena = arena;
+	}
 
-  public void setHomescore(int homescore) {
-    this.homescore = homescore;
-  }
+	public Team getHome() {
+		return home;
+	}
 
-  public int getVisitorscore() {
-    return visitorscore;
-  }
+	public void setHome(Team home) {
+		this.home = home;
+	}
 
-  public void setVisitorscore(int visitorscore) {
-    this.visitorscore = visitorscore;
-  }
+	public Team getVisitor() {
+		return visitor;
+	}
 
-  public String getOt() {
-    return ot;
-  }
+	public void setVisitor(Team visitor) {
+		this.visitor = visitor;
+	}
 
-  public void setOt(String ot) {
-    this.ot = ot;
-  }
+	public long getHomeScore() {
+		return homeScore;
+	}
 
-  public String getSo() {
-    return so;
-  }
+	public void setHomeScore(long homeScore) {
+		this.homeScore = homeScore;
+	}
 
-  public void setSo(String so) {
-    this.so = so;
-  }
+	public long getVisitorScore() {
+		return visitorScore;
+	}
+
+	public void setVisitorScore(long visitorScore) {
+		this.visitorScore = visitorScore;
+	}
+
+	public char getOT() {
+		return OT;
+	}
+
+	public void setOT(char oT) {
+		OT = oT;
+	}
+
+	public char getSO() {
+		return SO;
+	}
+
+	public void setSO(char sO) {
+		SO = sO;
+	}
+
 }

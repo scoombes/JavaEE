@@ -1,0 +1,1653 @@
+[derby][Time:1469074997588][Thread:main][Connection@5a602e26] getMetaData () returned DatabaseMetaData@7121aee0
+[derby][Time:1469074997909][Thread:main][Connection@5a602e26] prepareStatement (SELECT TEAMID, TEAMNAME, asstcoach, headCoach, manager, trainer FROM TEAM) called
+[derby][Time:1469074997996][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@58c0897c
+[derby][Time:1469074997996][Thread:main][PreparedStatement@58c0897c] executeQuery () called
+[derby][Time:1469074997996][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998049][Thread:main][PreparedStatement@58c0897c] executeQuery () returned ResultSet@3534cd84
+[derby][Time:1469074998049][Thread:main][ResultSet@3534cd84] getMetaData () called
+[derby][Time:1469074998049][Thread:main][ResultSet@3534cd84] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@66c1774d
+[derby][Time:1469074998049][Thread:main][ResultSet@3534cd84] next () called
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] next () returned true
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getString (1) called
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getString () returned CAN002
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getString (2) called
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getString () returned Montreal Canadiens
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getLong (3) called
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getLong () returned 20002
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getLong (4) called
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getLong () returned 20001
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getLong (5) called
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getLong () returned 20003
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getLong (6) called
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getLong () returned 20004
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] next () called
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] next () returned true
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getString (1) called
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getString () returned BRU001
+[derby][Time:1469074998050][Thread:main][ResultSet@3534cd84] getString (2) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getString () returned Boston Bruins
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong (3) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong () returned 20012
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong (4) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong () returned 20011
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong (5) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong () returned 20014
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong (6) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong () returned 20013
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] next () called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] next () returned true
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getString (1) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getString () returned PEN001
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getString (2) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getString () returned Pittsburgh Penguins
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong (3) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong () returned 20022
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong (4) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong () returned 20021
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong (5) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong () returned 20024
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong (6) called
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] getLong () returned 20023
+[derby][Time:1469074998051][Thread:main][ResultSet@3534cd84] next () called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] next () returned true
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getString (1) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getString () returned CAN001
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getString (2) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getString () returned Vancouver Canucks
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong (3) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong () returned 20032
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong (4) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong () returned 20031
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong (5) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong () returned 20034
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong (6) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong () returned 20033
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] next () called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] next () returned true
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getString (1) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getString () returned LFS001
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getString (2) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getString () returned Toronto Maple Leafs
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong (3) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong () returned 20042
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong (4) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong () returned 20041
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong (5) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong () returned 20044
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong (6) called
+[derby][Time:1469074998052][Thread:main][ResultSet@3534cd84] getLong () returned 20043
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] next () called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] next () returned true
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getString (1) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getString () returned RDW001
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getString (2) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getString () returned Detroit Red Wings
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong (3) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong () returned 20052
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong (4) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong () returned 20051
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong (5) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong () returned 20054
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong (6) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong () returned 20053
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] next () called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] next () returned true
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getString (1) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getString () returned BLK001
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getString (2) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getString () returned Chicago Blackhawks
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong (3) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong () returned 20063
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong (4) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong () returned 20062
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong (5) called
+[derby][Time:1469074998053][Thread:main][ResultSet@3534cd84] getLong () returned 20061
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong (6) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong () returned 20064
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] next () called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] next () returned true
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getString (1) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getString () returned DEV001
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getString (2) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getString () returned New Jersey Devils
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong (3) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong () returned 20072
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong (4) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong () returned 20071
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong (5) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong () returned 20074
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong (6) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong () returned 20073
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] next () called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] next () returned true
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getString (1) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getString () returned GDT001
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getString (2) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getString () returned Good Team
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong (3) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong () returned 20787
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong (4) called
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong () returned 20784
+[derby][Time:1469074998054][Thread:main][ResultSet@3534cd84] getLong (5) called
+[derby][Time:1469074998055][Thread:main][ResultSet@3534cd84] getLong () returned 20785
+[derby][Time:1469074998055][Thread:main][ResultSet@3534cd84] getLong (6) called
+[derby][Time:1469074998055][Thread:main][ResultSet@3534cd84] getLong () returned 20786
+[derby][Time:1469074998055][Thread:main][ResultSet@3534cd84] next () called
+[derby][Time:1469074998089][Thread:main][ResultSet@3534cd84] next () returned false
+[derby][Time:1469074998089][Thread:main][ResultSet@3534cd84] close () called
+[derby][Time:1469074998089][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998089][Thread:main][PreparedStatement@58c0897c] close () called
+[derby][Time:1469074998089][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998089][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998095][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074998123][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@7b3aaba1
+[derby][Time:1469074998123][Thread:main][PreparedStatement@7b3aaba1] setLong (1, 20002) called
+[derby][Time:1469074998123][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998124][Thread:main][PreparedStatement@7b3aaba1] executeQuery () called
+[derby][Time:1469074998124][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998148][Thread:main][PreparedStatement@7b3aaba1] executeQuery () returned ResultSet@617e38e9
+[derby][Time:1469074998148][Thread:main][ResultSet@617e38e9] getMetaData () called
+[derby][Time:1469074998148][Thread:main][ResultSet@617e38e9] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@25ca7b00
+[derby][Time:1469074998148][Thread:main][ResultSet@617e38e9] next () called
+[derby][Time:1469074998148][Thread:main][ResultSet@617e38e9] next () returned true
+[derby][Time:1469074998148][Thread:main][ResultSet@617e38e9] getLong (1) called
+[derby][Time:1469074998148][Thread:main][ResultSet@617e38e9] getLong () returned 20002
+[derby][Time:1469074998148][Thread:main][ResultSet@617e38e9] getString (2) called
+[derby][Time:1469074998148][Thread:main][ResultSet@617e38e9] getString () returned null
+[derby][Time:1469074998148][Thread:main][ResultSet@617e38e9] getString (3) called
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString () returned Montreal
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString (4) called
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString () returned Canada
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString (5) called
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString () returned null
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString (6) called
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString () returned Jean-Jacques
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString (7) called
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString () returned Daigneault
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString (8) called
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString () returned null
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString (9) called
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString () returned null
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString (10) called
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString () returned null
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString (11) called
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString () returned Quebec
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString (12) called
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] getString () returned null
+[derby][Time:1469074998149][Thread:main][ResultSet@617e38e9] next () called
+[derby][Time:1469074998182][Thread:main][ResultSet@617e38e9] next () returned false
+[derby][Time:1469074998183][Thread:main][ResultSet@617e38e9] close () called
+[derby][Time:1469074998183][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998183][Thread:main][PreparedStatement@7b3aaba1] close () called
+[derby][Time:1469074998183][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998183][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998185][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074998213][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@49bf36f0
+[derby][Time:1469074998213][Thread:main][PreparedStatement@49bf36f0] setLong (1, 20001) called
+[derby][Time:1469074998213][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998213][Thread:main][PreparedStatement@49bf36f0] executeQuery () called
+[derby][Time:1469074998214][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998237][Thread:main][PreparedStatement@49bf36f0] executeQuery () returned ResultSet@28afec63
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getMetaData () called
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@35c86c73
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] next () called
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] next () returned true
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getLong (1) called
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getLong () returned 20001
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getString (2) called
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getString () returned null
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getString (3) called
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getString () returned Montreal
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getString (4) called
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getString () returned Canada
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getString (5) called
+[derby][Time:1469074998237][Thread:main][ResultSet@28afec63] getString () returned null
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString (6) called
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString () returned Michel
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString (7) called
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString () returned Therrien
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString (8) called
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString () returned null
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString (9) called
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString () returned null
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString (10) called
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString () returned null
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString (11) called
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString () returned Quebec
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString (12) called
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] getString () returned null
+[derby][Time:1469074998238][Thread:main][ResultSet@28afec63] next () called
+[derby][Time:1469074998261][Thread:main][ResultSet@28afec63] next () returned false
+[derby][Time:1469074998261][Thread:main][ResultSet@28afec63] close () called
+[derby][Time:1469074998261][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998261][Thread:main][PreparedStatement@49bf36f0] close () called
+[derby][Time:1469074998261][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998261][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998261][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074998299][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@79480d9a
+[derby][Time:1469074998299][Thread:main][PreparedStatement@79480d9a] setLong (1, 20003) called
+[derby][Time:1469074998299][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998299][Thread:main][PreparedStatement@79480d9a] executeQuery () called
+[derby][Time:1469074998299][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998325][Thread:main][PreparedStatement@79480d9a] executeQuery () returned ResultSet@697537aa
+[derby][Time:1469074998325][Thread:main][ResultSet@697537aa] getMetaData () called
+[derby][Time:1469074998325][Thread:main][ResultSet@697537aa] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@e99affd
+[derby][Time:1469074998325][Thread:main][ResultSet@697537aa] next () called
+[derby][Time:1469074998325][Thread:main][ResultSet@697537aa] next () returned true
+[derby][Time:1469074998325][Thread:main][ResultSet@697537aa] getLong (1) called
+[derby][Time:1469074998325][Thread:main][ResultSet@697537aa] getLong () returned 20003
+[derby][Time:1469074998325][Thread:main][ResultSet@697537aa] getString (2) called
+[derby][Time:1469074998325][Thread:main][ResultSet@697537aa] getString () returned null
+[derby][Time:1469074998325][Thread:main][ResultSet@697537aa] getString (3) called
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString () returned Montreal
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString (4) called
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString () returned Canada
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString (5) called
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString () returned null
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString (6) called
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString () returned Marc
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString (7) called
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString () returned Bergevin
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString (8) called
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString () returned null
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString (9) called
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString () returned null
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString (10) called
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString () returned null
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString (11) called
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString () returned Quebec
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString (12) called
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] getString () returned null
+[derby][Time:1469074998326][Thread:main][ResultSet@697537aa] next () called
+[derby][Time:1469074998349][Thread:main][ResultSet@697537aa] next () returned false
+[derby][Time:1469074998349][Thread:main][ResultSet@697537aa] close () called
+[derby][Time:1469074998349][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998349][Thread:main][PreparedStatement@79480d9a] close () called
+[derby][Time:1469074998349][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998349][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998349][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074998377][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@bf11288
+[derby][Time:1469074998377][Thread:main][PreparedStatement@bf11288] setLong (1, 20004) called
+[derby][Time:1469074998377][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998377][Thread:main][PreparedStatement@bf11288] executeQuery () called
+[derby][Time:1469074998377][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998408][Thread:main][PreparedStatement@bf11288] executeQuery () returned ResultSet@7ff7a4d7
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getMetaData () called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@5b6760e3
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] next () called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] next () returned true
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getLong (1) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getLong () returned 20004
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (2) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned null
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (3) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned Pointe Claire
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (4) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned Canada
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (5) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned null
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (6) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned Graham
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (7) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned Rynbend
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (8) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned null
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (9) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned null
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (10) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned null
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (11) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned Quebec
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString (12) called
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] getString () returned null
+[derby][Time:1469074998408][Thread:main][ResultSet@7ff7a4d7] next () called
+[derby][Time:1469074998434][Thread:main][ResultSet@7ff7a4d7] next () returned false
+[derby][Time:1469074998434][Thread:main][ResultSet@7ff7a4d7] close () called
+[derby][Time:1469074998434][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998435][Thread:main][PreparedStatement@bf11288] close () called
+[derby][Time:1469074998435][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998435][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998439][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074998470][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@109a14ca
+[derby][Time:1469074998470][Thread:main][PreparedStatement@109a14ca] setLong (1, 20012) called
+[derby][Time:1469074998470][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998470][Thread:main][PreparedStatement@109a14ca] executeQuery () called
+[derby][Time:1469074998470][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998496][Thread:main][PreparedStatement@109a14ca] executeQuery () returned ResultSet@73cae249
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getMetaData () called
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@cce6203
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] next () called
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] next () returned true
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getLong (1) called
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getLong () returned 20012
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString (2) called
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString () returned null
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString (3) called
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString () returned Blairmore
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString (4) called
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString () returned Canada
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString (5) called
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString () returned null
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString (6) called
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString () returned Doug 
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString (7) called
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString () returned Houda
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString (8) called
+[derby][Time:1469074998496][Thread:main][ResultSet@73cae249] getString () returned null
+[derby][Time:1469074998497][Thread:main][ResultSet@73cae249] getString (9) called
+[derby][Time:1469074998497][Thread:main][ResultSet@73cae249] getString () returned null
+[derby][Time:1469074998497][Thread:main][ResultSet@73cae249] getString (10) called
+[derby][Time:1469074998497][Thread:main][ResultSet@73cae249] getString () returned null
+[derby][Time:1469074998497][Thread:main][ResultSet@73cae249] getString (11) called
+[derby][Time:1469074998497][Thread:main][ResultSet@73cae249] getString () returned Alberta
+[derby][Time:1469074998497][Thread:main][ResultSet@73cae249] getString (12) called
+[derby][Time:1469074998497][Thread:main][ResultSet@73cae249] getString () returned null
+[derby][Time:1469074998497][Thread:main][ResultSet@73cae249] next () called
+[derby][Time:1469074998517][Thread:main][ResultSet@73cae249] next () returned false
+[derby][Time:1469074998517][Thread:main][ResultSet@73cae249] close () called
+[derby][Time:1469074998517][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998517][Thread:main][PreparedStatement@109a14ca] close () called
+[derby][Time:1469074998518][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998518][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998518][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074998544][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@4184b986
+[derby][Time:1469074998544][Thread:main][PreparedStatement@4184b986] setLong (1, 20011) called
+[derby][Time:1469074998544][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998544][Thread:main][PreparedStatement@4184b986] executeQuery () called
+[derby][Time:1469074998544][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998569][Thread:main][PreparedStatement@4184b986] executeQuery () returned ResultSet@70b02e04
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getMetaData () called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@3e9d4268
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] next () called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] next () returned true
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getLong (1) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getLong () returned 20011
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString (2) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString () returned null
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString (3) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString () returned Blind River
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString (4) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString () returned Canada
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString (5) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString () returned null
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString (6) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString () returned Claude
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString (7) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString () returned Julien
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString (8) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString () returned null
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString (9) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString () returned null
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString (10) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString () returned null
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString (11) called
+[derby][Time:1469074998569][Thread:main][ResultSet@70b02e04] getString () returned Ontario
+[derby][Time:1469074998570][Thread:main][ResultSet@70b02e04] getString (12) called
+[derby][Time:1469074998570][Thread:main][ResultSet@70b02e04] getString () returned null
+[derby][Time:1469074998570][Thread:main][ResultSet@70b02e04] next () called
+[derby][Time:1469074998592][Thread:main][ResultSet@70b02e04] next () returned false
+[derby][Time:1469074998592][Thread:main][ResultSet@70b02e04] close () called
+[derby][Time:1469074998593][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998593][Thread:main][PreparedStatement@4184b986] close () called
+[derby][Time:1469074998593][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998593][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998593][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074998617][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@4672d9f5
+[derby][Time:1469074998617][Thread:main][PreparedStatement@4672d9f5] setLong (1, 20014) called
+[derby][Time:1469074998617][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998617][Thread:main][PreparedStatement@4672d9f5] executeQuery () called
+[derby][Time:1469074998617][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998649][Thread:main][PreparedStatement@4672d9f5] executeQuery () returned ResultSet@1e4387f5
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getMetaData () called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@6392f558
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] next () called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] next () returned true
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getLong (1) called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getLong () returned 20014
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString (2) called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString () returned null
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString (3) called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString () returned Nepean
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString (4) called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString () returned Canada
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString (5) called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString () returned null
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString (6) called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString () returned Peter
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString (7) called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString () returned Chiarelli
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString (8) called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString () returned null
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString (9) called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString () returned null
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString (10) called
+[derby][Time:1469074998649][Thread:main][ResultSet@1e4387f5] getString () returned null
+[derby][Time:1469074998650][Thread:main][ResultSet@1e4387f5] getString (11) called
+[derby][Time:1469074998650][Thread:main][ResultSet@1e4387f5] getString () returned Ontario
+[derby][Time:1469074998650][Thread:main][ResultSet@1e4387f5] getString (12) called
+[derby][Time:1469074998650][Thread:main][ResultSet@1e4387f5] getString () returned null
+[derby][Time:1469074998650][Thread:main][ResultSet@1e4387f5] next () called
+[derby][Time:1469074998673][Thread:main][ResultSet@1e4387f5] next () returned false
+[derby][Time:1469074998673][Thread:main][ResultSet@1e4387f5] close () called
+[derby][Time:1469074998673][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998673][Thread:main][PreparedStatement@4672d9f5] close () called
+[derby][Time:1469074998673][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998673][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998674][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074998714][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@518e322b
+[derby][Time:1469074998714][Thread:main][PreparedStatement@518e322b] setLong (1, 20013) called
+[derby][Time:1469074998714][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998714][Thread:main][PreparedStatement@518e322b] executeQuery () called
+[derby][Time:1469074998714][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998753][Thread:main][PreparedStatement@518e322b] executeQuery () returned ResultSet@4e7fcee1
+[derby][Time:1469074998753][Thread:main][ResultSet@4e7fcee1] getMetaData () called
+[derby][Time:1469074998753][Thread:main][ResultSet@4e7fcee1] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@28e73e0a
+[derby][Time:1469074998753][Thread:main][ResultSet@4e7fcee1] next () called
+[derby][Time:1469074998753][Thread:main][ResultSet@4e7fcee1] next () returned true
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getLong (1) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getLong () returned 20013
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (2) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned null
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (3) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned Lynnfield
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (4) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned USA
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (5) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned null
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (6) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned Don
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (7) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned DelNegro
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (8) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned null
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (9) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned null
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (10) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned null
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (11) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned Massachusetts
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString (12) called
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] getString () returned null
+[derby][Time:1469074998754][Thread:main][ResultSet@4e7fcee1] next () called
+[derby][Time:1469074998816][Thread:main][ResultSet@4e7fcee1] next () returned false
+[derby][Time:1469074998816][Thread:main][ResultSet@4e7fcee1] close () called
+[derby][Time:1469074998816][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998816][Thread:main][PreparedStatement@518e322b] close () called
+[derby][Time:1469074998816][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998816][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998817][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074998845][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@64ae8431
+[derby][Time:1469074998845][Thread:main][PreparedStatement@64ae8431] setLong (1, 20022) called
+[derby][Time:1469074998845][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998845][Thread:main][PreparedStatement@64ae8431] executeQuery () called
+[derby][Time:1469074998845][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998871][Thread:main][PreparedStatement@64ae8431] executeQuery () returned ResultSet@7d68e09a
+[derby][Time:1469074998871][Thread:main][ResultSet@7d68e09a] getMetaData () called
+[derby][Time:1469074998871][Thread:main][ResultSet@7d68e09a] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@7071dec8
+[derby][Time:1469074998871][Thread:main][ResultSet@7d68e09a] next () called
+[derby][Time:1469074998871][Thread:main][ResultSet@7d68e09a] next () returned true
+[derby][Time:1469074998871][Thread:main][ResultSet@7d68e09a] getLong (1) called
+[derby][Time:1469074998871][Thread:main][ResultSet@7d68e09a] getLong () returned 20022
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (2) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned null
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (3) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned Pittsburgh
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (4) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned United States
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (5) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned null
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (6) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned Rick
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (7) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned Tocchet
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (8) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned null
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (9) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned null
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (10) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned null
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (11) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned Pennsylvania
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString (12) called
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] getString () returned null
+[derby][Time:1469074998872][Thread:main][ResultSet@7d68e09a] next () called
+[derby][Time:1469074998902][Thread:main][ResultSet@7d68e09a] next () returned false
+[derby][Time:1469074998902][Thread:main][ResultSet@7d68e09a] close () called
+[derby][Time:1469074998902][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998902][Thread:main][PreparedStatement@64ae8431] close () called
+[derby][Time:1469074998903][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998903][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998903][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074998933][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@43d95624
+[derby][Time:1469074998933][Thread:main][PreparedStatement@43d95624] setLong (1, 20021) called
+[derby][Time:1469074998933][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998933][Thread:main][PreparedStatement@43d95624] executeQuery () called
+[derby][Time:1469074998933][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998957][Thread:main][PreparedStatement@43d95624] executeQuery () returned ResultSet@71a67848
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] getMetaData () called
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@6822f942
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] next () called
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] next () returned true
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] getLong (1) called
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] getLong () returned 20021
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] getString (2) called
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] getString () returned null
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] getString (3) called
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] getString () returned Pittsburgh
+[derby][Time:1469074998957][Thread:main][ResultSet@71a67848] getString (4) called
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString () returned United States
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString (5) called
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString () returned null
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString (6) called
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString () returned Mike
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString (7) called
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString () returned Johnston
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString (8) called
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString () returned null
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString (9) called
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString () returned null
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString (10) called
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString () returned null
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString (11) called
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString () returned Pennsylvania
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString (12) called
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] getString () returned null
+[derby][Time:1469074998958][Thread:main][ResultSet@71a67848] next () called
+[derby][Time:1469074998987][Thread:main][ResultSet@71a67848] next () returned false
+[derby][Time:1469074998987][Thread:main][ResultSet@71a67848] close () called
+[derby][Time:1469074998987][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998987][Thread:main][PreparedStatement@43d95624] close () called
+[derby][Time:1469074998987][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998987][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074998988][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469074999281][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@501a9177
+[derby][Time:1469074999281][Thread:main][PreparedStatement@501a9177] setLong (1, 20024) called
+[derby][Time:1469074999281][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074999281][Thread:main][PreparedStatement@501a9177] executeQuery () called
+[derby][Time:1469074999281][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074999588][Thread:main][PreparedStatement@501a9177] executeQuery () returned ResultSet@1fb4a84
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getMetaData () called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@18d92120
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] next () called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] next () returned true
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getLong (1) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getLong () returned 20024
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (2) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned null
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (3) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned Pittsburgh
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (4) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned United States
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (5) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned null
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (6) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned Jim
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (7) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned Rutherford
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (8) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned null
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (9) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned null
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (10) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned null
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (11) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned Pennsylvania
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString (12) called
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] getString () returned null
+[derby][Time:1469074999588][Thread:main][ResultSet@1fb4a84] next () called
+[derby][Time:1469074999898][Thread:main][ResultSet@1fb4a84] next () returned false
+[derby][Time:1469074999898][Thread:main][ResultSet@1fb4a84] close () called
+[derby][Time:1469074999898][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074999898][Thread:main][PreparedStatement@501a9177] close () called
+[derby][Time:1469074999898][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074999898][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469074999899][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075000161][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@570dc89e
+[derby][Time:1469075000161][Thread:main][PreparedStatement@570dc89e] setLong (1, 20023) called
+[derby][Time:1469075000161][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075000161][Thread:main][PreparedStatement@570dc89e] executeQuery () called
+[derby][Time:1469075000161][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075000457][Thread:main][PreparedStatement@570dc89e] executeQuery () returned ResultSet@49ee29b8
+[derby][Time:1469075000457][Thread:main][ResultSet@49ee29b8] getMetaData () called
+[derby][Time:1469075000457][Thread:main][ResultSet@49ee29b8] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@32f514f3
+[derby][Time:1469075000457][Thread:main][ResultSet@49ee29b8] next () called
+[derby][Time:1469075000457][Thread:main][ResultSet@49ee29b8] next () returned true
+[derby][Time:1469075000457][Thread:main][ResultSet@49ee29b8] getLong (1) called
+[derby][Time:1469075000457][Thread:main][ResultSet@49ee29b8] getLong () returned 20023
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (2) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned null
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (3) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned Pittsburgh
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (4) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned United States
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (5) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned null
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (6) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned Mike
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (7) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned Kadar
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (8) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned null
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (9) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned null
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (10) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned null
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (11) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned Pennsylvania
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString (12) called
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] getString () returned null
+[derby][Time:1469075000458][Thread:main][ResultSet@49ee29b8] next () called
+[derby][Time:1469075000841][Thread:main][ResultSet@49ee29b8] next () returned false
+[derby][Time:1469075000842][Thread:main][ResultSet@49ee29b8] close () called
+[derby][Time:1469075000842][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075000842][Thread:main][PreparedStatement@570dc89e] close () called
+[derby][Time:1469075000842][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075000842][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075000843][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075001142][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@2961892c
+[derby][Time:1469075001142][Thread:main][PreparedStatement@2961892c] setLong (1, 20032) called
+[derby][Time:1469075001142][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075001142][Thread:main][PreparedStatement@2961892c] executeQuery () called
+[derby][Time:1469075001142][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075001493][Thread:main][PreparedStatement@2961892c] executeQuery () returned ResultSet@4274bced
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getMetaData () called
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@7e1f8db0
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] next () called
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] next () returned true
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getLong (1) called
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getLong () returned 20032
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString (2) called
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString () returned null
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString (3) called
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString () returned Kamloops
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString (4) called
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString () returned Canada
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString (5) called
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString () returned null
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString (6) called
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString () returned Doug
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString (7) called
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString () returned Lidster
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString (8) called
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString () returned null
+[derby][Time:1469075001493][Thread:main][ResultSet@4274bced] getString (9) called
+[derby][Time:1469075001494][Thread:main][ResultSet@4274bced] getString () returned null
+[derby][Time:1469075001494][Thread:main][ResultSet@4274bced] getString (10) called
+[derby][Time:1469075001494][Thread:main][ResultSet@4274bced] getString () returned null
+[derby][Time:1469075001494][Thread:main][ResultSet@4274bced] getString (11) called
+[derby][Time:1469075001494][Thread:main][ResultSet@4274bced] getString () returned British Columbia
+[derby][Time:1469075001494][Thread:main][ResultSet@4274bced] getString (12) called
+[derby][Time:1469075001494][Thread:main][ResultSet@4274bced] getString () returned null
+[derby][Time:1469075001494][Thread:main][ResultSet@4274bced] next () called
+[derby][Time:1469075001797][Thread:main][ResultSet@4274bced] next () returned false
+[derby][Time:1469075001797][Thread:main][ResultSet@4274bced] close () called
+[derby][Time:1469075001797][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075001797][Thread:main][PreparedStatement@2961892c] close () called
+[derby][Time:1469075001797][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075001797][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075001797][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075002089][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@498f5e80
+[derby][Time:1469075002089][Thread:main][PreparedStatement@498f5e80] setLong (1, 20031) called
+[derby][Time:1469075002089][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075002089][Thread:main][PreparedStatement@498f5e80] executeQuery () called
+[derby][Time:1469075002089][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075002380][Thread:main][PreparedStatement@498f5e80] executeQuery () returned ResultSet@63854b3a
+[derby][Time:1469075002380][Thread:main][ResultSet@63854b3a] getMetaData () called
+[derby][Time:1469075002380][Thread:main][ResultSet@63854b3a] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@440dffe1
+[derby][Time:1469075002380][Thread:main][ResultSet@63854b3a] next () called
+[derby][Time:1469075002380][Thread:main][ResultSet@63854b3a] next () returned true
+[derby][Time:1469075002380][Thread:main][ResultSet@63854b3a] getLong (1) called
+[derby][Time:1469075002380][Thread:main][ResultSet@63854b3a] getLong () returned 20031
+[derby][Time:1469075002380][Thread:main][ResultSet@63854b3a] getString (2) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned null
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString (3) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned Climax
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString (4) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned Canada
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString (5) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned null
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString (6) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned Willie
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString (7) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned Desjardins
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString (8) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned null
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString (9) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned null
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString (10) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned null
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString (11) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned Saskatchewan
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString (12) called
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] getString () returned null
+[derby][Time:1469075002381][Thread:main][ResultSet@63854b3a] next () called
+[derby][Time:1469075002681][Thread:main][ResultSet@63854b3a] next () returned false
+[derby][Time:1469075002681][Thread:main][ResultSet@63854b3a] close () called
+[derby][Time:1469075002681][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075002681][Thread:main][PreparedStatement@498f5e80] close () called
+[derby][Time:1469075002681][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075002681][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075002681][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075003473][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@731a2fae
+[derby][Time:1469075003473][Thread:main][PreparedStatement@731a2fae] setLong (1, 20034) called
+[derby][Time:1469075003473][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075003473][Thread:main][PreparedStatement@731a2fae] executeQuery () called
+[derby][Time:1469075003473][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075003745][Thread:main][PreparedStatement@731a2fae] executeQuery () returned ResultSet@3c30838b
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getMetaData () called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@150c398c
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] next () called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] next () returned true
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getLong (1) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getLong () returned 20034
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (2) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned null
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (3) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned Edmonton
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (4) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned Canada
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (5) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned null
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (6) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned Jim
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (7) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned Benning
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (8) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned null
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (9) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned null
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (10) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned null
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (11) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned Alberta
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString (12) called
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] getString () returned null
+[derby][Time:1469075003746][Thread:main][ResultSet@3c30838b] next () called
+[derby][Time:1469075003962][Thread:main][ResultSet@3c30838b] next () returned false
+[derby][Time:1469075003962][Thread:main][ResultSet@3c30838b] close () called
+[derby][Time:1469075003962][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075003962][Thread:main][PreparedStatement@731a2fae] close () called
+[derby][Time:1469075003963][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075003963][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075003963][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075004058][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@5596211f
+[derby][Time:1469075004059][Thread:main][PreparedStatement@5596211f] setLong (1, 20033) called
+[derby][Time:1469075004059][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075004059][Thread:main][PreparedStatement@5596211f] executeQuery () called
+[derby][Time:1469075004059][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075004383][Thread:main][PreparedStatement@5596211f] executeQuery () returned ResultSet@7358a61e
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getMetaData () called
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@410236bb
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] next () called
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] next () returned true
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getLong (1) called
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getLong () returned 20033
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getString (2) called
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getString () returned null
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getString (3) called
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getString () returned null
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getString (4) called
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getString () returned null
+[derby][Time:1469075004383][Thread:main][ResultSet@7358a61e] getString (5) called
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString () returned null
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString (6) called
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString () returned Mike
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString (7) called
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString () returned Burnstein
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString (8) called
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString () returned null
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString (9) called
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString () returned null
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString (10) called
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString () returned null
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString (11) called
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString () returned null
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString (12) called
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] getString () returned null
+[derby][Time:1469075004384][Thread:main][ResultSet@7358a61e] next () called
+[derby][Time:1469075004657][Thread:main][ResultSet@7358a61e] next () returned false
+[derby][Time:1469075004657][Thread:main][ResultSet@7358a61e] close () called
+[derby][Time:1469075004657][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075004657][Thread:main][PreparedStatement@5596211f] close () called
+[derby][Time:1469075004657][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075004657][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075004658][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075004963][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@1cfd9dd
+[derby][Time:1469075004963][Thread:main][PreparedStatement@1cfd9dd] setLong (1, 20042) called
+[derby][Time:1469075004963][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075004963][Thread:main][PreparedStatement@1cfd9dd] executeQuery () called
+[derby][Time:1469075004963][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075005273][Thread:main][PreparedStatement@1cfd9dd] executeQuery () returned ResultSet@74e83d18
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getMetaData () called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@3b032e9e
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] next () called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] next () returned true
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getLong (1) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getLong () returned 20042
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (2) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned null
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (3) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned Toronto
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (4) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned Canada
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (5) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned null
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (6) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned Steve
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (7) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned Spott
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (8) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned null
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (9) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned null
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (10) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned null
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (11) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned Toronto
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString (12) called
+[derby][Time:1469075005273][Thread:main][ResultSet@74e83d18] getString () returned null
+[derby][Time:1469075005274][Thread:main][ResultSet@74e83d18] next () called
+[derby][Time:1469075005581][Thread:main][ResultSet@74e83d18] next () returned false
+[derby][Time:1469075005581][Thread:main][ResultSet@74e83d18] close () called
+[derby][Time:1469075005581][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075005581][Thread:main][PreparedStatement@1cfd9dd] close () called
+[derby][Time:1469075005581][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075005581][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075005581][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075005895][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@4de9a556
+[derby][Time:1469075005895][Thread:main][PreparedStatement@4de9a556] setLong (1, 20041) called
+[derby][Time:1469075005895][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075005895][Thread:main][PreparedStatement@4de9a556] executeQuery () called
+[derby][Time:1469075005895][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075006148][Thread:main][PreparedStatement@4de9a556] executeQuery () returned ResultSet@2665d910
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getMetaData () called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@688dbd21
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] next () called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] next () returned true
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getLong (1) called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getLong () returned 20041
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString (2) called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString () returned null
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString (3) called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString () returned Toronto
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString (4) called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString () returned Canada
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString (5) called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString () returned null
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString (6) called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString () returned Peter
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString (7) called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString () returned Horachek
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString (8) called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString () returned null
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString (9) called
+[derby][Time:1469075006148][Thread:main][ResultSet@2665d910] getString () returned null
+[derby][Time:1469075006149][Thread:main][ResultSet@2665d910] getString (10) called
+[derby][Time:1469075006149][Thread:main][ResultSet@2665d910] getString () returned null
+[derby][Time:1469075006149][Thread:main][ResultSet@2665d910] getString (11) called
+[derby][Time:1469075006149][Thread:main][ResultSet@2665d910] getString () returned Toronto
+[derby][Time:1469075006149][Thread:main][ResultSet@2665d910] getString (12) called
+[derby][Time:1469075006149][Thread:main][ResultSet@2665d910] getString () returned null
+[derby][Time:1469075006149][Thread:main][ResultSet@2665d910] next () called
+[derby][Time:1469075006399][Thread:main][ResultSet@2665d910] next () returned false
+[derby][Time:1469075006399][Thread:main][ResultSet@2665d910] close () called
+[derby][Time:1469075006399][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075006399][Thread:main][PreparedStatement@4de9a556] close () called
+[derby][Time:1469075006399][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075006399][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075006399][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075006589][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@317bf727
+[derby][Time:1469075006589][Thread:main][PreparedStatement@317bf727] setLong (1, 20044) called
+[derby][Time:1469075006589][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075006589][Thread:main][PreparedStatement@317bf727] executeQuery () called
+[derby][Time:1469075006589][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075006818][Thread:main][PreparedStatement@317bf727] executeQuery () returned ResultSet@419f3ad2
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getMetaData () called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@3cced2a6
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] next () called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] next () returned true
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getLong (1) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getLong () returned 20044
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (2) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned null
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (3) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned Toronto
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (4) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned Canada
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (5) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned null
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (6) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned Dave
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (7) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned Nonis
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (8) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned null
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (9) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned null
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (10) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned null
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (11) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned Toronto
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString (12) called
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] getString () returned null
+[derby][Time:1469075006818][Thread:main][ResultSet@419f3ad2] next () called
+[derby][Time:1469075007012][Thread:main][ResultSet@419f3ad2] next () returned false
+[derby][Time:1469075007012][Thread:main][ResultSet@419f3ad2] close () called
+[derby][Time:1469075007012][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007012][Thread:main][PreparedStatement@317bf727] close () called
+[derby][Time:1469075007012][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007012][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007012][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007072][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@2e67af7a
+[derby][Time:1469075007072][Thread:main][PreparedStatement@2e67af7a] setLong (1, 20043) called
+[derby][Time:1469075007072][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007072][Thread:main][PreparedStatement@2e67af7a] executeQuery () called
+[derby][Time:1469075007072][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007106][Thread:main][PreparedStatement@2e67af7a] executeQuery () returned ResultSet@19318a63
+[derby][Time:1469075007106][Thread:main][ResultSet@19318a63] getMetaData () called
+[derby][Time:1469075007106][Thread:main][ResultSet@19318a63] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@3747681
+[derby][Time:1469075007106][Thread:main][ResultSet@19318a63] next () called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] next () returned true
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getLong (1) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getLong () returned 20043
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (2) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned null
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (3) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned Toronto
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (4) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned Canada
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (5) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned null
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (6) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned Paul
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (7) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned Ayotte
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (8) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned null
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (9) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned null
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (10) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned null
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (11) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned Toronto
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString (12) called
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] getString () returned null
+[derby][Time:1469075007107][Thread:main][ResultSet@19318a63] next () called
+[derby][Time:1469075007135][Thread:main][ResultSet@19318a63] next () returned false
+[derby][Time:1469075007135][Thread:main][ResultSet@19318a63] close () called
+[derby][Time:1469075007135][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007135][Thread:main][PreparedStatement@2e67af7a] close () called
+[derby][Time:1469075007135][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007135][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007136][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007163][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@dc1d5cd
+[derby][Time:1469075007163][Thread:main][PreparedStatement@dc1d5cd] setLong (1, 20052) called
+[derby][Time:1469075007163][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007163][Thread:main][PreparedStatement@dc1d5cd] executeQuery () called
+[derby][Time:1469075007163][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007193][Thread:main][PreparedStatement@dc1d5cd] executeQuery () returned ResultSet@30bb8cc9
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getMetaData () called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@6917f91d
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] next () called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] next () returned true
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getLong (1) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getLong () returned 20052
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (2) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString () returned null
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (3) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString () returned Downers Grove
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (4) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString () returned USA
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (5) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString () returned null
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (6) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString () returned Tony
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (7) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString () returned Granato
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (8) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString () returned null
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (9) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString () returned null
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (10) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString () returned null
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (11) called
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString () returned Illinois
+[derby][Time:1469075007193][Thread:main][ResultSet@30bb8cc9] getString (12) called
+[derby][Time:1469075007194][Thread:main][ResultSet@30bb8cc9] getString () returned null
+[derby][Time:1469075007194][Thread:main][ResultSet@30bb8cc9] next () called
+[derby][Time:1469075007216][Thread:main][ResultSet@30bb8cc9] next () returned false
+[derby][Time:1469075007216][Thread:main][ResultSet@30bb8cc9] close () called
+[derby][Time:1469075007216][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007216][Thread:main][PreparedStatement@dc1d5cd] close () called
+[derby][Time:1469075007216][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007216][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007216][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007243][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@24e414d2
+[derby][Time:1469075007244][Thread:main][PreparedStatement@24e414d2] setLong (1, 20051) called
+[derby][Time:1469075007244][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007244][Thread:main][PreparedStatement@24e414d2] executeQuery () called
+[derby][Time:1469075007244][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007283][Thread:main][PreparedStatement@24e414d2] executeQuery () returned ResultSet@7a12f9e9
+[derby][Time:1469075007283][Thread:main][ResultSet@7a12f9e9] getMetaData () called
+[derby][Time:1469075007283][Thread:main][ResultSet@7a12f9e9] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@73d56e9b
+[derby][Time:1469075007283][Thread:main][ResultSet@7a12f9e9] next () called
+[derby][Time:1469075007283][Thread:main][ResultSet@7a12f9e9] next () returned true
+[derby][Time:1469075007283][Thread:main][ResultSet@7a12f9e9] getLong (1) called
+[derby][Time:1469075007283][Thread:main][ResultSet@7a12f9e9] getLong () returned 20051
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (2) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned null
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (3) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned Manitouwadge
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (4) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned USA
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (5) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned null
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (6) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned Mike
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (7) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned Babcock
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (8) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned null
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (9) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned null
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (10) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned null
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (11) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned Ontario
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString (12) called
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] getString () returned null
+[derby][Time:1469075007284][Thread:main][ResultSet@7a12f9e9] next () called
+[derby][Time:1469075007309][Thread:main][ResultSet@7a12f9e9] next () returned false
+[derby][Time:1469075007310][Thread:main][ResultSet@7a12f9e9] close () called
+[derby][Time:1469075007310][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007310][Thread:main][PreparedStatement@24e414d2] close () called
+[derby][Time:1469075007310][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007310][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007311][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007339][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@4150bd86
+[derby][Time:1469075007339][Thread:main][PreparedStatement@4150bd86] setLong (1, 20054) called
+[derby][Time:1469075007339][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007339][Thread:main][PreparedStatement@4150bd86] executeQuery () called
+[derby][Time:1469075007339][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007368][Thread:main][PreparedStatement@4150bd86] executeQuery () returned ResultSet@1bcac9ea
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getMetaData () called
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@1e8e2fe7
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] next () called
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] next () returned true
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getLong (1) called
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getLong () returned 20054
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getString (2) called
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getString () returned null
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getString (3) called
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getString () returned Vernon
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getString (4) called
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getString () returned Canada
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getString (5) called
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getString () returned null
+[derby][Time:1469075007368][Thread:main][ResultSet@1bcac9ea] getString (6) called
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString () returned Ken
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString (7) called
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString () returned Holland
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString (8) called
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString () returned null
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString (9) called
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString () returned null
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString (10) called
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString () returned null
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString (11) called
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString () returned British Columbia
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString (12) called
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] getString () returned null
+[derby][Time:1469075007369][Thread:main][ResultSet@1bcac9ea] next () called
+[derby][Time:1469075007413][Thread:main][ResultSet@1bcac9ea] next () returned false
+[derby][Time:1469075007413][Thread:main][ResultSet@1bcac9ea] close () called
+[derby][Time:1469075007413][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007413][Thread:main][PreparedStatement@4150bd86] close () called
+[derby][Time:1469075007413][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007413][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007413][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007439][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@8eaf65d
+[derby][Time:1469075007439][Thread:main][PreparedStatement@8eaf65d] setLong (1, 20053) called
+[derby][Time:1469075007439][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007439][Thread:main][PreparedStatement@8eaf65d] executeQuery () called
+[derby][Time:1469075007439][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007474][Thread:main][PreparedStatement@8eaf65d] executeQuery () returned ResultSet@79d4583d
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] getMetaData () called
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@63ed4b47
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] next () called
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] next () returned true
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] getLong (1) called
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] getLong () returned 20053
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] getString (2) called
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] getString () returned null
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] getString (3) called
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] getString () returned Detroit
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] getString (4) called
+[derby][Time:1469075007474][Thread:main][ResultSet@79d4583d] getString () returned USA
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString (5) called
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString () returned null
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString (6) called
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString () returned Piet
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString (7) called
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString () returned VanZant
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString (8) called
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString () returned null
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString (9) called
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString () returned null
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString (10) called
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString () returned null
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString (11) called
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString () returned Michigan
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString (12) called
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] getString () returned null
+[derby][Time:1469075007475][Thread:main][ResultSet@79d4583d] next () called
+[derby][Time:1469075007499][Thread:main][ResultSet@79d4583d] next () returned false
+[derby][Time:1469075007499][Thread:main][ResultSet@79d4583d] close () called
+[derby][Time:1469075007499][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007499][Thread:main][PreparedStatement@8eaf65d] close () called
+[derby][Time:1469075007499][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007499][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007501][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007531][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@6f0354e2
+[derby][Time:1469075007531][Thread:main][PreparedStatement@6f0354e2] setLong (1, 20063) called
+[derby][Time:1469075007531][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007531][Thread:main][PreparedStatement@6f0354e2] executeQuery () called
+[derby][Time:1469075007531][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007563][Thread:main][PreparedStatement@6f0354e2] executeQuery () returned ResultSet@43b9fa5e
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getMetaData () called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@66e4540e
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] next () called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] next () returned true
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getLong (1) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getLong () returned 20063
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (2) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString () returned null
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (3) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString () returned Montreal
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (4) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString () returned Canada
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (5) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString () returned null
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (6) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString () returned Kevin
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (7) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString () returned Dineen
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (8) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString () returned null
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (9) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString () returned null
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (10) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString () returned null
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (11) called
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString () returned Quebec
+[derby][Time:1469075007563][Thread:main][ResultSet@43b9fa5e] getString (12) called
+[derby][Time:1469075007564][Thread:main][ResultSet@43b9fa5e] getString () returned null
+[derby][Time:1469075007564][Thread:main][ResultSet@43b9fa5e] next () called
+[derby][Time:1469075007589][Thread:main][ResultSet@43b9fa5e] next () returned false
+[derby][Time:1469075007589][Thread:main][ResultSet@43b9fa5e] close () called
+[derby][Time:1469075007589][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007589][Thread:main][PreparedStatement@6f0354e2] close () called
+[derby][Time:1469075007590][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007590][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007590][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007619][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@184a97e8
+[derby][Time:1469075007619][Thread:main][PreparedStatement@184a97e8] setLong (1, 20062) called
+[derby][Time:1469075007619][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007619][Thread:main][PreparedStatement@184a97e8] executeQuery () called
+[derby][Time:1469075007619][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007650][Thread:main][PreparedStatement@184a97e8] executeQuery () returned ResultSet@493b0ccd
+[derby][Time:1469075007650][Thread:main][ResultSet@493b0ccd] getMetaData () called
+[derby][Time:1469075007650][Thread:main][ResultSet@493b0ccd] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@43c58c4a
+[derby][Time:1469075007650][Thread:main][ResultSet@493b0ccd] next () called
+[derby][Time:1469075007650][Thread:main][ResultSet@493b0ccd] next () returned true
+[derby][Time:1469075007650][Thread:main][ResultSet@493b0ccd] getLong (1) called
+[derby][Time:1469075007650][Thread:main][ResultSet@493b0ccd] getLong () returned 20062
+[derby][Time:1469075007650][Thread:main][ResultSet@493b0ccd] getString (2) called
+[derby][Time:1469075007650][Thread:main][ResultSet@493b0ccd] getString () returned null
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString (3) called
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString () returned Windsor
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString (4) called
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString () returned Canada
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString (5) called
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString () returned null
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString (6) called
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString () returned Joel
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString (7) called
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString () returned Quenneville
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString (8) called
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString () returned null
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString (9) called
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString () returned null
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString (10) called
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString () returned null
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString (11) called
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString () returned Ontario
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString (12) called
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] getString () returned null
+[derby][Time:1469075007651][Thread:main][ResultSet@493b0ccd] next () called
+[derby][Time:1469075007677][Thread:main][ResultSet@493b0ccd] next () returned false
+[derby][Time:1469075007677][Thread:main][ResultSet@493b0ccd] close () called
+[derby][Time:1469075007677][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007677][Thread:main][PreparedStatement@184a97e8] close () called
+[derby][Time:1469075007677][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007677][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007678][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007707][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@5e7d7108
+[derby][Time:1469075007707][Thread:main][PreparedStatement@5e7d7108] setLong (1, 20061) called
+[derby][Time:1469075007707][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007707][Thread:main][PreparedStatement@5e7d7108] executeQuery () called
+[derby][Time:1469075007707][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007734][Thread:main][PreparedStatement@5e7d7108] executeQuery () returned ResultSet@7d87f4ae
+[derby][Time:1469075007734][Thread:main][ResultSet@7d87f4ae] getMetaData () called
+[derby][Time:1469075007734][Thread:main][ResultSet@7d87f4ae] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@68d10be4
+[derby][Time:1469075007734][Thread:main][ResultSet@7d87f4ae] next () called
+[derby][Time:1469075007734][Thread:main][ResultSet@7d87f4ae] next () returned true
+[derby][Time:1469075007734][Thread:main][ResultSet@7d87f4ae] getLong (1) called
+[derby][Time:1469075007734][Thread:main][ResultSet@7d87f4ae] getLong () returned 20061
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (2) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned null
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (3) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned Montreal
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (4) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned Canada
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (5) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned null
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (6) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned Stan
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (7) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned Bowman
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (8) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned null
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (9) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned null
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (10) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned null
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (11) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned Quebec
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString (12) called
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] getString () returned null
+[derby][Time:1469075007735][Thread:main][ResultSet@7d87f4ae] next () called
+[derby][Time:1469075007763][Thread:main][ResultSet@7d87f4ae] next () returned false
+[derby][Time:1469075007763][Thread:main][ResultSet@7d87f4ae] close () called
+[derby][Time:1469075007763][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007763][Thread:main][PreparedStatement@5e7d7108] close () called
+[derby][Time:1469075007763][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007763][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007764][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007793][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@47df68e4
+[derby][Time:1469075007793][Thread:main][PreparedStatement@47df68e4] setLong (1, 20064) called
+[derby][Time:1469075007793][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007793][Thread:main][PreparedStatement@47df68e4] executeQuery () called
+[derby][Time:1469075007793][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007820][Thread:main][PreparedStatement@47df68e4] executeQuery () returned ResultSet@1c5f7599
+[derby][Time:1469075007820][Thread:main][ResultSet@1c5f7599] getMetaData () called
+[derby][Time:1469075007820][Thread:main][ResultSet@1c5f7599] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@3f219e5c
+[derby][Time:1469075007820][Thread:main][ResultSet@1c5f7599] next () called
+[derby][Time:1469075007820][Thread:main][ResultSet@1c5f7599] next () returned true
+[derby][Time:1469075007820][Thread:main][ResultSet@1c5f7599] getLong (1) called
+[derby][Time:1469075007820][Thread:main][ResultSet@1c5f7599] getLong () returned 20064
+[derby][Time:1469075007820][Thread:main][ResultSet@1c5f7599] getString (2) called
+[derby][Time:1469075007820][Thread:main][ResultSet@1c5f7599] getString () returned null
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString (3) called
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString () returned Madison
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString (4) called
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString () returned USA
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString (5) called
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString () returned null
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString (6) called
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString () returned Paul
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString (7) called
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString () returned Goodman
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString (8) called
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString () returned null
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString (9) called
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString () returned null
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString (10) called
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString () returned null
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString (11) called
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString () returned Wisconsin
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString (12) called
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] getString () returned null
+[derby][Time:1469075007821][Thread:main][ResultSet@1c5f7599] next () called
+[derby][Time:1469075007848][Thread:main][ResultSet@1c5f7599] next () returned false
+[derby][Time:1469075007848][Thread:main][ResultSet@1c5f7599] close () called
+[derby][Time:1469075007848][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007849][Thread:main][PreparedStatement@47df68e4] close () called
+[derby][Time:1469075007849][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007849][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007849][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007875][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@421aaa49
+[derby][Time:1469075007875][Thread:main][PreparedStatement@421aaa49] setLong (1, 20072) called
+[derby][Time:1469075007875][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007875][Thread:main][PreparedStatement@421aaa49] executeQuery () called
+[derby][Time:1469075007875][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007908][Thread:main][PreparedStatement@421aaa49] executeQuery () returned ResultSet@64a1c086
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getMetaData () called
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@3766d107
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] next () called
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] next () returned true
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getLong (1) called
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getLong () returned 20072
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString (2) called
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString () returned null
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString (3) called
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString () returned Weston
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString (4) called
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString () returned Canada
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString (5) called
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString () returned null
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString (6) called
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString () returned Adam
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString (7) called
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString () returned Oates
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString (8) called
+[derby][Time:1469075007908][Thread:main][ResultSet@64a1c086] getString () returned null
+[derby][Time:1469075007909][Thread:main][ResultSet@64a1c086] getString (9) called
+[derby][Time:1469075007909][Thread:main][ResultSet@64a1c086] getString () returned null
+[derby][Time:1469075007909][Thread:main][ResultSet@64a1c086] getString (10) called
+[derby][Time:1469075007909][Thread:main][ResultSet@64a1c086] getString () returned null
+[derby][Time:1469075007909][Thread:main][ResultSet@64a1c086] getString (11) called
+[derby][Time:1469075007909][Thread:main][ResultSet@64a1c086] getString () returned Ontario
+[derby][Time:1469075007909][Thread:main][ResultSet@64a1c086] getString (12) called
+[derby][Time:1469075007909][Thread:main][ResultSet@64a1c086] getString () returned null
+[derby][Time:1469075007909][Thread:main][ResultSet@64a1c086] next () called
+[derby][Time:1469075007936][Thread:main][ResultSet@64a1c086] next () returned false
+[derby][Time:1469075007936][Thread:main][ResultSet@64a1c086] close () called
+[derby][Time:1469075007936][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007936][Thread:main][PreparedStatement@421aaa49] close () called
+[derby][Time:1469075007936][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007936][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007936][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075007963][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@3f253efb
+[derby][Time:1469075007963][Thread:main][PreparedStatement@3f253efb] setLong (1, 20071) called
+[derby][Time:1469075007963][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007963][Thread:main][PreparedStatement@3f253efb] executeQuery () called
+[derby][Time:1469075007964][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075007991][Thread:main][PreparedStatement@3f253efb] executeQuery () returned ResultSet@2649f120
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getMetaData () called
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@40757f83
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] next () called
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] next () returned true
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getLong (1) called
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getLong () returned 20071
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString (2) called
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString () returned null
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString (3) called
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString () returned Kitchener
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString (4) called
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString () returned Canada
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString (5) called
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString () returned null
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString (6) called
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString () returned Scott
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString (7) called
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString () returned Stevens
+[derby][Time:1469075007991][Thread:main][ResultSet@2649f120] getString (8) called
+[derby][Time:1469075007992][Thread:main][ResultSet@2649f120] getString () returned null
+[derby][Time:1469075007992][Thread:main][ResultSet@2649f120] getString (9) called
+[derby][Time:1469075007992][Thread:main][ResultSet@2649f120] getString () returned null
+[derby][Time:1469075007992][Thread:main][ResultSet@2649f120] getString (10) called
+[derby][Time:1469075007992][Thread:main][ResultSet@2649f120] getString () returned null
+[derby][Time:1469075007992][Thread:main][ResultSet@2649f120] getString (11) called
+[derby][Time:1469075007992][Thread:main][ResultSet@2649f120] getString () returned Ontario
+[derby][Time:1469075007992][Thread:main][ResultSet@2649f120] getString (12) called
+[derby][Time:1469075007992][Thread:main][ResultSet@2649f120] getString () returned null
+[derby][Time:1469075007992][Thread:main][ResultSet@2649f120] next () called
+[derby][Time:1469075008016][Thread:main][ResultSet@2649f120] next () returned false
+[derby][Time:1469075008016][Thread:main][ResultSet@2649f120] close () called
+[derby][Time:1469075008016][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008016][Thread:main][PreparedStatement@3f253efb] close () called
+[derby][Time:1469075008016][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008016][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008017][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075008047][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@62069284
+[derby][Time:1469075008047][Thread:main][PreparedStatement@62069284] setLong (1, 20074) called
+[derby][Time:1469075008047][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008047][Thread:main][PreparedStatement@62069284] executeQuery () called
+[derby][Time:1469075008047][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008074][Thread:main][PreparedStatement@62069284] executeQuery () returned ResultSet@1d7d4a63
+[derby][Time:1469075008074][Thread:main][ResultSet@1d7d4a63] getMetaData () called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@c9eb8b5
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] next () called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] next () returned true
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getLong (1) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getLong () returned 20074
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (2) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned null
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (3) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned Providence
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (4) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned USA
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (5) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned null
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (6) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned Lou
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (7) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned Lamoriello
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (8) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned null
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (9) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned null
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (10) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned null
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (11) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned Rhode Island
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString (12) called
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] getString () returned null
+[derby][Time:1469075008075][Thread:main][ResultSet@1d7d4a63] next () called
+[derby][Time:1469075008104][Thread:main][ResultSet@1d7d4a63] next () returned false
+[derby][Time:1469075008104][Thread:main][ResultSet@1d7d4a63] close () called
+[derby][Time:1469075008104][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008104][Thread:main][PreparedStatement@62069284] close () called
+[derby][Time:1469075008104][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008104][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008104][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075008133][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@870798c
+[derby][Time:1469075008133][Thread:main][PreparedStatement@870798c] setLong (1, 20073) called
+[derby][Time:1469075008133][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008133][Thread:main][PreparedStatement@870798c] executeQuery () called
+[derby][Time:1469075008133][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008163][Thread:main][PreparedStatement@870798c] executeQuery () returned ResultSet@103bdaa8
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getMetaData () called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@499053eb
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] next () called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] next () returned true
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getLong (1) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getLong () returned 20073
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (2) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned null
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (3) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned Verona
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (4) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned USA
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (5) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned null
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (6) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned Richard
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (7) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned Stinziano
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (8) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned null
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (9) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned null
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (10) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned null
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (11) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned New Jersey
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString (12) called
+[derby][Time:1469075008163][Thread:main][ResultSet@103bdaa8] getString () returned null
+[derby][Time:1469075008164][Thread:main][ResultSet@103bdaa8] next () called
+[derby][Time:1469075008189][Thread:main][ResultSet@103bdaa8] next () returned false
+[derby][Time:1469075008189][Thread:main][ResultSet@103bdaa8] close () called
+[derby][Time:1469075008189][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008189][Thread:main][PreparedStatement@870798c] close () called
+[derby][Time:1469075008189][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008189][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008190][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075008217][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@2ced9829
+[derby][Time:1469075008217][Thread:main][PreparedStatement@2ced9829] setLong (1, 20787) called
+[derby][Time:1469075008217][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008217][Thread:main][PreparedStatement@2ced9829] executeQuery () called
+[derby][Time:1469075008217][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008256][Thread:main][PreparedStatement@2ced9829] executeQuery () returned ResultSet@22a0c2ca
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getMetaData () called
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@68546d88
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] next () called
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] next () returned true
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getLong (1) called
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getLong () returned 20787
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString (2) called
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString () returned null
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString (3) called
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString () returned null
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString (4) called
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString () returned null
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString (5) called
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString () returned null
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString (6) called
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString () returned Jang
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString (7) called
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString () returned Min-Chul
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString (8) called
+[derby][Time:1469075008256][Thread:main][ResultSet@22a0c2ca] getString () returned null
+[derby][Time:1469075008257][Thread:main][ResultSet@22a0c2ca] getString (9) called
+[derby][Time:1469075008257][Thread:main][ResultSet@22a0c2ca] getString () returned null
+[derby][Time:1469075008257][Thread:main][ResultSet@22a0c2ca] getString (10) called
+[derby][Time:1469075008257][Thread:main][ResultSet@22a0c2ca] getString () returned null
+[derby][Time:1469075008257][Thread:main][ResultSet@22a0c2ca] getString (11) called
+[derby][Time:1469075008257][Thread:main][ResultSet@22a0c2ca] getString () returned null
+[derby][Time:1469075008257][Thread:main][ResultSet@22a0c2ca] getString (12) called
+[derby][Time:1469075008257][Thread:main][ResultSet@22a0c2ca] getString () returned null
+[derby][Time:1469075008257][Thread:main][ResultSet@22a0c2ca] next () called
+[derby][Time:1469075008282][Thread:main][ResultSet@22a0c2ca] next () returned false
+[derby][Time:1469075008282][Thread:main][ResultSet@22a0c2ca] close () called
+[derby][Time:1469075008282][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008282][Thread:main][PreparedStatement@2ced9829] close () called
+[derby][Time:1469075008282][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008282][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008282][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075008309][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@7ee3313a
+[derby][Time:1469075008309][Thread:main][PreparedStatement@7ee3313a] setLong (1, 20784) called
+[derby][Time:1469075008309][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008309][Thread:main][PreparedStatement@7ee3313a] executeQuery () called
+[derby][Time:1469075008309][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008336][Thread:main][PreparedStatement@7ee3313a] executeQuery () returned ResultSet@75b517ea
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getMetaData () called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@44354005
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] next () called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] next () returned true
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getLong (1) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getLong () returned 20784
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (2) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned null
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (3) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned null
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (4) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned null
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (5) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned null
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (6) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned Ilyes
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (7) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned Satouri
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (8) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned null
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (9) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned null
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (10) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned null
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (11) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned null
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString (12) called
+[derby][Time:1469075008336][Thread:main][ResultSet@75b517ea] getString () returned null
+[derby][Time:1469075008337][Thread:main][ResultSet@75b517ea] next () called
+[derby][Time:1469075008370][Thread:main][ResultSet@75b517ea] next () returned false
+[derby][Time:1469075008370][Thread:main][ResultSet@75b517ea] close () called
+[derby][Time:1469075008370][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008370][Thread:main][PreparedStatement@7ee3313a] close () called
+[derby][Time:1469075008370][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008370][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008371][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075008397][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@3fe2b3f
+[derby][Time:1469075008397][Thread:main][PreparedStatement@3fe2b3f] setLong (1, 20785) called
+[derby][Time:1469075008397][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008397][Thread:main][PreparedStatement@3fe2b3f] executeQuery () called
+[derby][Time:1469075008397][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008436][Thread:main][PreparedStatement@3fe2b3f] executeQuery () returned ResultSet@23c93725
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getMetaData () called
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@6f43707d
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] next () called
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] next () returned true
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getLong (1) called
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getLong () returned 20785
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getString (2) called
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getString () returned null
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getString (3) called
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getString () returned null
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getString (4) called
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getString () returned null
+[derby][Time:1469075008436][Thread:main][ResultSet@23c93725] getString (5) called
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString () returned null
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString (6) called
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString () returned Sasha
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString (7) called
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString () returned Hostyn
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString (8) called
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString () returned null
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString (9) called
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString () returned null
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString (10) called
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString () returned null
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString (11) called
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString () returned null
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString (12) called
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] getString () returned null
+[derby][Time:1469075008437][Thread:main][ResultSet@23c93725] next () called
+[derby][Time:1469075008462][Thread:main][ResultSet@23c93725] next () returned false
+[derby][Time:1469075008462][Thread:main][ResultSet@23c93725] close () called
+[derby][Time:1469075008462][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008462][Thread:main][PreparedStatement@3fe2b3f] close () called
+[derby][Time:1469075008462][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008462][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008463][Thread:main][Connection@5a602e26] prepareStatement (SELECT STAFFID, CERTIFICATION, CITY, COUNTRY, EMAIL, FIRSTNAME, LASTNAME, MOBILE, PHONE, POSTALCODE, STATE_PROVINCE, STREETADDRESS FROM STAFF WHERE (STAFFID = ?)) called
+[derby][Time:1469075008491][Thread:main][Connection@5a602e26] prepareStatement () returned PreparedStatement@348e579c
+[derby][Time:1469075008491][Thread:main][PreparedStatement@348e579c] setLong (1, 20786) called
+[derby][Time:1469075008491][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008491][Thread:main][PreparedStatement@348e579c] executeQuery () called
+[derby][Time:1469075008491][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008524][Thread:main][PreparedStatement@348e579c] executeQuery () returned ResultSet@6d19ddb8
+[derby][Time:1469075008524][Thread:main][ResultSet@6d19ddb8] getMetaData () called
+[derby][Time:1469075008524][Thread:main][ResultSet@6d19ddb8] getMetaData () returned org.apache.derby.client.am.ColumnMetaData@3d2b92fd
+[derby][Time:1469075008524][Thread:main][ResultSet@6d19ddb8] next () called
+[derby][Time:1469075008524][Thread:main][ResultSet@6d19ddb8] next () returned true
+[derby][Time:1469075008524][Thread:main][ResultSet@6d19ddb8] getLong (1) called
+[derby][Time:1469075008524][Thread:main][ResultSet@6d19ddb8] getLong () returned 20786
+[derby][Time:1469075008524][Thread:main][ResultSet@6d19ddb8] getString (2) called
+[derby][Time:1469075008524][Thread:main][ResultSet@6d19ddb8] getString () returned null
+[derby][Time:1469075008524][Thread:main][ResultSet@6d19ddb8] getString (3) called
+[derby][Time:1469075008524][Thread:main][ResultSet@6d19ddb8] getString () returned null
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString (4) called
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString () returned null
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString (5) called
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString () returned null
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString (6) called
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString () returned Chris
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString (7) called
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString () returned Loranger
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString (8) called
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString () returned null
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString (9) called
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString () returned null
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString (10) called
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString () returned null
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString (11) called
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString () returned null
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString (12) called
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] getString () returned null
+[derby][Time:1469075008525][Thread:main][ResultSet@6d19ddb8] next () called
+[derby][Time:1469075008558][Thread:main][ResultSet@6d19ddb8] next () returned false
+[derby][Time:1469075008558][Thread:main][ResultSet@6d19ddb8] close () called
+[derby][Time:1469075008558][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008558][Thread:main][PreparedStatement@348e579c] close () called
+[derby][Time:1469075008558][Thread:main][Connection@5a602e26] isClosed () returned false
+[derby][Time:1469075008558][Thread:main][Connection@5a602e26] isClosed () returned false
