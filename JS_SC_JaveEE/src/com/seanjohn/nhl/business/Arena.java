@@ -9,6 +9,7 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class Arena implements Serializable {
+	private static final long serialVersionUID = 1L;
 	@Id
 	private String arenaId;
 	private String arenaName;

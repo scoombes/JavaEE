@@ -22,7 +22,7 @@ public class Schedule implements Serializable {
 	private Long scheduleId;
 	@ManyToOne
 	@JoinColumn(name = "league")
-	private String league;
+	private League league;
 	private String season;
 	private String schedulename;
 	private String sponsor;
@@ -59,11 +59,11 @@ public class Schedule implements Serializable {
 		this.scheduleId = scheduleId;
 	}
 
-	public String getLeague() {
+	public League getLeague() {
 		return league;
 	}
 
-	public void setLeague(String league) {
+	public void setLeague(League league) {
 		this.league = league;
 	}
 

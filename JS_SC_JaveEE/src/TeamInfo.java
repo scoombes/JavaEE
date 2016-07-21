@@ -14,6 +14,7 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
 import com.seanjohn.nhl.business.Player;
+import com.seanjohn.nhl.business.Roster;
 import com.seanjohn.nhl.business.Staff;
 import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.HibernateIO;
@@ -28,7 +29,10 @@ public class TeamInfo {
 		
 	    em.getTransaction().commit();
 		for (Player t : player) {
-			System.out.println(t.getFirstName() + " " + t.getLastName());
+			for(Roster r :t.getRoster()){
+				System.out.println(t.getFirstName() + " " + t.getLastName() + " " + r.getJersey());
+			}
+		
 		}
 	}
 }
