@@ -33,10 +33,10 @@
 			     <c:forEach items="${teams}" var="team">
                 			<tr>
                 				<td><a href="roster?teamid=${team.teamId}">${team.teamname}</a></td>
-                				<td>${team.headcoach}</td>
-                				<td>${team.asstcoach}</td>
-                				<td>${team.trainer}</td>
-                				<td>${team.manager}</td>
+                				<td>${team.headCoach.firstName} ${team.headCoach.lastName}</td>
+                				<td>${team.asstcoach.firstName} ${team.asstcoach.lastName}</td>
+                				<td>${team.trainer.firstName} ${team.trainer.lastName}</td>
+                				<td>${team.manager.firstName} ${team.manager.lastName}</td>
                 			</tr>
                 		</c:forEach>
 			    </tbody>
