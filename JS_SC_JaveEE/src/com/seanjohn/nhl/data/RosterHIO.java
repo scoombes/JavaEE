@@ -31,4 +31,13 @@ public class RosterHIO extends HibernateIO {
 				.getResultList();
 		return teamRoster;
 	}
+
+	public Roster getPlayer(long playerId) throws SQLException {
+		Roster rosterPlayer = em
+				.createQuery(
+						"select r from Roster r where R.player.playerId = :playerId",
+						Roster.class).setParameter("playerId", playerId)
+				.getSingleResult();
+		return rosterPlayer;
+	}
 }

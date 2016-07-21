@@ -15,41 +15,35 @@
 	<jsp:attribute name="footer">
       <jsp:include page="_footer.jsp" />
     </jsp:attribute>
-	<jsp:body>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-            	<c:choose>
-            		<c:when test="${teamName == ''}">
-            			<h1 style="color: red">No team found</h1>
-            		</c:when>
-            		<c:otherwise>
-            		<h1>Roster of the ${teamName}</h1>
-            		</c:otherwise>
-            	</c:choose>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-12 text-center">
-            	<h3>Staff</h3>
-            </div>
-        </div>
+	<jsp:body>    
         <div class="row">
             <div class="col-lg-12 text-center">
                 <table class="table table-striped">
                 	<thead>
                 		<tr>
-                			<th>Title</th>
+                			<th>Jersey</th>
                 			<th>Last Name</th>
                 			<th>First Name</th>
+                			<th>Position</th>
+                			<th>Height</th>
+                			<th>Weight</th>
+                			<th>Hometown</th>
+                			<th>Province/State</th>
+                			<th>School</th>
                 		</tr>             		
                 	</thead>
                 	<tbody>
-               			<tr>     
-               				<td>Head Coach</td>
-               				<td>${headCoach.lastName}</td>
-               				<td>${headCoach.firstName}</td>          				
-               			</tr>
+               			<tr>
+       						<td>${rosterPlayer.jersey}</td>
+       						<td>${rosterPlayer.player.lastName}</td>
+       						<td>${rosterPlayer.player.firstName}</td>
+       						<td>${rosterPlayer.position}</td>
+       						<td>${rosterPlayer.player.height}</td>
+       						<td>${rosterPlayer.player.weight}</td>
+       						<td>${rosterPlayer.player.city}</td>
+       						<td>${rosterPlayer.player.state_province}</td>
+       						<td>${rosterPlayer.player.school}</td>
+       					</tr>
                 	</tbody>
                 </table>
             </div>
