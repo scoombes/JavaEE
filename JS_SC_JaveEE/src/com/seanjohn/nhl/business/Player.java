@@ -27,9 +27,9 @@ public class Player implements Serializable {
 	private String phone;
 	private String mobile;
 	private String email;
-	@OneToMany
+	@OneToMany(mappedBy="player")
 	private List<PlayerStats> playerStats;
-	@OneToMany
+	@OneToMany(mappedBy="player")
 	private List<Roster> roster;
 	
 	public List<Roster> getRoster() {
