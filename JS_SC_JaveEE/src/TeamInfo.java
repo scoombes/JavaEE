@@ -2,6 +2,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javassist.expr.NewArray;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -15,35 +17,31 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+import com.seanjohn.nhl.business.Game;
 import com.seanjohn.nhl.business.Player;
 import com.seanjohn.nhl.business.Roster;
 import com.seanjohn.nhl.business.Staff;
 import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.HibernateIO;
 import com.seanjohn.nhl.data.RosterHIO;
+import com.seanjohn.nhl.data.ScheduleHIO;
 import com.seanjohn.nhl.data.TeamHIO;
 
 public class TeamInfo {
 	public static void main(String[] args) {
-		RosterHIO rosterIO = new RosterHIO();
-		List<Roster> roster = new ArrayList<Roster>();
+		ScheduleHIO scheduleIO = new ScheduleHIO();
+		List<Game> games;
 		try {
-			roster = rosterIO.getRoster("LFS001");
+			games = scheduleIO.getTeamSchedule("LFS001");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			games = new ArrayList<Game>();
 		}
 		
-//		EntityManagerFactory emf = Persistence.createEntityManagerFactory("nhlLeagueContext");
-//		EntityManager em = emf.createEntityManager();
-//		em.getTransaction().begin();
-//		List<Roster> player = em.createQuery("select t from Roster t where t.team.teamId = :teamId", Roster.class)
-//				.setParameter("teamId", "LFS001").getResultList();
-//		
-//	    em.getTransaction().commit();
-		for (Roster t : roster) {
+		for (Game t : games) {
 			//for(Roster r :t.getRoster()){
-				System.out.println(t.getPlayer().getFirstName() + " " + t.getPlayer().getLastName() + " " + t.getPosition());
+				System.out.println(t.getGameDate() + " " + t.getHome().getTeamname() + " " + t.getVisitor().getTeamname());
 			//}
 		}
 		

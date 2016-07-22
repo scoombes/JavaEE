@@ -38,4 +38,15 @@ public class ScheduleHIO extends HibernateIO {
 								+ "ORDER BY g.gameDate", Game.class)
 				.getResultList();
 	}
+
+	public List<Game> getTeamSchedule(String teamId) throws SQLException {
+		return em
+				.createQuery(
+						"SELECT g "
+								+ "FROM Game g "
+								+ "WHERE g.home.teamId = :teamId OR g.visitor.teamId = :teamId "
+								+ "ORDER BY g.gameDate", Game.class)
+				.setParameter("teamId", teamId).getResultList();
+
+	}
 }
