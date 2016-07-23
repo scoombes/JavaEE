@@ -7,9 +7,6 @@
 package com.seanjohn.nhl;
 
 import java.io.IOException;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -17,15 +14,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-import com.seanjohn.nhl.business.Player;
 import com.seanjohn.nhl.business.Roster;
-import com.seanjohn.nhl.business.Staff;
-import com.seanjohn.nhl.business.Team;
-import com.seanjohn.nhl.data.PlayerHIO;
 import com.seanjohn.nhl.data.RosterHIO;
-import com.seanjohn.nhl.data.RosterIO;
 
 /**
  * Servlet implementation class RosterServlet

@@ -6,13 +6,11 @@
 
 package com.seanjohn.nhl.data;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
-import com.seanjohn.nhl.business.*;
+import com.seanjohn.nhl.business.Roster;
+import com.seanjohn.nhl.business.Team;
 
 public class RosterHIO extends HibernateIO {
 	public Team getTeam(String teamId) throws SQLException {

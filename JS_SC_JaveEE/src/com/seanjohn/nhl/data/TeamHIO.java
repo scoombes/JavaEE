@@ -6,13 +6,14 @@
 
 package com.seanjohn.nhl.data;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-import com.seanjohn.nhl.business.*;
+import com.seanjohn.nhl.business.Game;
+import com.seanjohn.nhl.business.Standing;
+import com.seanjohn.nhl.business.Team;
 
 public class TeamHIO extends HibernateIO {
 

@@ -7,34 +7,17 @@
 package com.seanjohn.nhl;
 
 import java.io.IOException;
-import java.sql.Date;
 import java.sql.SQLException;
-import java.sql.Time;
-import java.util.ArrayList;
-import java.util.List;
 
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-import com.seanjohn.nhl.business.Arena;
 import com.seanjohn.nhl.business.Game;
-import com.seanjohn.nhl.business.Roster;
-import com.seanjohn.nhl.business.Schedule;
-import com.seanjohn.nhl.business.Staff;
-import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.GameHIO;
-import com.seanjohn.nhl.data.RosterHIO;
-import com.seanjohn.nhl.data.ScheduleHIO;
-import com.seanjohn.nhl.data.ScheduleIO;
-import com.seanjohn.nhl.data.TeamHIO;
 
 /**
  * Servlet implementation class CompleteGamesServlet
@@ -113,26 +96,28 @@ public class addScoreServlet extends HttpServlet {
 						game.setVisitorScore(visitorScore);
 						
 						if(OT == "on"){
-							game.setOT('Y');
-							
+							game.setOT('Y');	
+						}else{
+							game.setOT('N');
 						}
+						
 						if(SO == "on"){
 							game.setOT('Y');
 							game.setSO('Y');
+						}else{
+							game.setSO('N');
 						}
-						
 						
 						gameIO.updateGame(game);
 
 					} catch (SQLException e) {
 						ServletContext context = this.getServletContext();
 						context.log(getServletName(), e);
-					}
-				
+					}	
 				}
 				
 				if(teamId != null){
-					url = "teamschedule?teamid=" + teamId.toString();
+					url = "teamschedule?teamid=" + teamId;
 				}
 				
 				response.sendRedirect(url);

@@ -6,26 +6,23 @@
 
 package com.seanjohn.nhl.data;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
-import com.seanjohn.nhl.business.*;
+import com.seanjohn.nhl.business.Game;
 
 public class GameHIO extends HibernateIO {
 
 	public Game getGame(long gameId) throws SQLException {
 		return em
 				.createQuery(
-						"SELECT G "
-								+ "FROM Game g "
+						"SELECT G " + "FROM Game g "
 								+ "WHERE g.gameId = :gameId ", Game.class)
-								.setParameter("gameId", gameId).getSingleResult();
+				.setParameter("gameId", gameId).getSingleResult();
 	}
-	
-	public void updateGame(Game updatedGame) throws SQLException{
-		
+
+	public void updateGame(Game updatedGame) throws SQLException {
+		em.getTransaction().begin();
+		em.persist(updatedGame);
+		em.getTransaction().commit();
 	}
 }

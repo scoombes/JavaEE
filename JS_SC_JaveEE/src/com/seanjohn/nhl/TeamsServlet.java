@@ -7,7 +7,6 @@
 package com.seanjohn.nhl;
 
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,11 +16,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
 import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.TeamHIO;
-import com.seanjohn.nhl.data.TeamIO;
 
 /**
  * Servlet implementation class TeamsServlet
@@ -35,9 +31,6 @@ public class TeamsServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setHeader("X-Servlet-Name", getServletName());
-    	
-	    //grabs user data from active session
-	    HttpSession session = request.getSession();
 	    
 	    //gets lists of teams from derby database via TeamIO class
 	    TeamHIO teamIO = new TeamHIO();

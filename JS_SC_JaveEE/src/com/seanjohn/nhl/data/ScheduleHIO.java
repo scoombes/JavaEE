@@ -6,13 +6,10 @@
 
 package com.seanjohn.nhl.data;
 
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 import com.seanjohn.nhl.business.Game;
-import com.seanjohn.nhl.business.Roster;
 
 /**
  * @author black
