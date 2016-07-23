@@ -25,7 +25,7 @@ public class ScheduleHIO extends HibernateIO {
 						"SELECT g "
 								+ "FROM Game g "
 								+ "WHERE g.homeScore IS NOT null AND g.visitorScore IS NOT null "
-								+ "ORDER BY g.gameDate", Game.class)
+								+ "ORDER BY g.gameDate, g.gametime", Game.class)
 				.getResultList();
 	}
 
@@ -35,7 +35,7 @@ public class ScheduleHIO extends HibernateIO {
 						"SELECT g "
 								+ "FROM Game g "
 								+ "WHERE g.homeScore IS null AND g.visitorScore IS null "
-								+ "ORDER BY g.gameDate", Game.class)
+								+ "ORDER BY g.gameDate, g.gametime", Game.class)
 				.getResultList();
 	}
 
@@ -45,7 +45,7 @@ public class ScheduleHIO extends HibernateIO {
 						"SELECT g "
 								+ "FROM Game g "
 								+ "WHERE g.home.teamId = :teamId OR g.visitor.teamId = :teamId "
-								+ "ORDER BY g.gameDate", Game.class)
+								+ "ORDER BY g.gameDate, g.gametime", Game.class)
 				.setParameter("teamId", teamId).getResultList();
 
 	}
