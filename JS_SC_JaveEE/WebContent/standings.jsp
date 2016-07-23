@@ -26,14 +26,14 @@
                     <th>Team</th>
                     <th>Points</th>
                     <th>Wins</th>
-                    <th>Overtime Losses</th>
                     <th>Losses</th>
+                    <th>Overtime Losses</th>
                   </tr>
                 </thead>
                 <tbody>
                  <c:forEach items="${teams}" var="team">
                             <tr>
-                                <td><a href="roster?teamid=${team.teamid}">${team.teamname}</a></td>
+                                <td><a href="roster?teamid=${team.team.teamId}">${team.team.teamName}</a></td>
                                 <td>${team.points}</td>
                                 <td>${team.wins}</td>
                                 <td>${team.losses}</td>

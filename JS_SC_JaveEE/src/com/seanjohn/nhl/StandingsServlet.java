@@ -10,6 +10,7 @@ package com.seanjohn.nhl;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -19,8 +20,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.seanjohn.nhl.business.Standing;
 import com.seanjohn.nhl.business.Team;
-import com.seanjohn.nhl.data.TeamIO;
+import com.seanjohn.nhl.data.TeamHIO;
 
 /**
  * Servlet implementation class StandingsServlet
@@ -34,28 +36,15 @@ public class StandingsServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setHeader("X-Servlet-Name", getServletName());
-
-	    //gets user data from current session
-	    HttpSession session = request.getSession();
-	    String user = (String)session.getAttribute("plaintextSQLUser");
-	    String pass = (String)session.getAttribute("plaintextSQLPass");	    
 	    
-	    //gets team standings from TeamIon
-    	TeamIO teamIO = new TeamIO(user, pass);
-    	ArrayList<Team> teams;      
-    	try {
-			teams = teamIO.getStandings();
-		} catch (SQLException e) {
-			ServletContext context = this.getServletContext();
-			context.log("getRoster", e);
-			teams = new ArrayList<Team>();
-		}
+		// gets team standings from TeamHIO
+		TeamHIO teamIO = new TeamHIO();
+		List<Standing> teams = teamIO.getStandings();
 
-    	//adds list of teams to be used on jsp
-    	request.setAttribute("teams", teams);    
-        String url = "/standings.jsp";
-        ServletContext sc = getServletContext();
-        sc.getRequestDispatcher(url).forward(request, response);
-
+		// adds list of teams to be used on jsp
+		request.setAttribute("teams", teams);
+		String url = "/standings.jsp";
+		ServletContext sc = getServletContext();
+		sc.getRequestDispatcher(url).forward(request, response);
 	}
 }
