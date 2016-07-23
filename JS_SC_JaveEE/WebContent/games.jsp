@@ -22,7 +22,8 @@
                <table class="table table-bordered">
 			    <thead>
 			      <tr>
-			        <th>Date</th>
+                    <th>Date</th>
+                    <th>Time</th>
 			        <th>Matchup</th>
 			        <th>Score</th>
 			        <th>Arena</th>
@@ -31,9 +32,14 @@
 			    <tbody>
 			     <c:forEach items="${games}" var="game">
                 			<tr>
-                				<td>${game.gameDate}</td>
-                				<td>${game.visitor.teamName} @ ${game.home.teamName}</td>
-                				<td>
+                                <td>${game.gameDate}</td>
+                                <td>${game.gameTime}</td>
+                                <td>
+                                    <span class="${game.visitor.teamId == highlightedTeam ? 'bg-primary' : ''}">${game.visitor.teamName}</span>
+                                    @
+                                    <span class="${game.home.teamId == highlightedTeam ? 'bg-primary' : ''}">${game.home.teamName}</span>
+                               </td>
+                               <td>
                 					${game.visitorScore} - ${game.homeScore}
                 					<c:choose>
 										<c:when test="${game.SO =='Y'}">
