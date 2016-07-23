@@ -21,5 +21,8 @@
                     <li>
                         <a href="completegames">Completed Games</a>
                     </li>
+                    <li>
+                        <a href="upcominggames">Coming Games</a>
+                    </li>
                 </ul>
             </div>

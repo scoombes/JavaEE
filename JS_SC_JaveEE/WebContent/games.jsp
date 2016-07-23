@@ -40,7 +40,15 @@
                                     <span class="${game.home.teamId == highlightedTeam ? 'bg-primary' : ''}">${game.home.teamName}</span>
                                </td>
                                <td>
-                					${game.visitorScore} - ${game.homeScore}
+                               		<c:choose>
+                               			<c:when test="${game.visitorScore == null && g.homescore == null}">
+                               				<a href="addscore?gameid=${game.gameId}&teamid=${highlightedTeam}">Add Score</a>
+                               			</c:when>                          			
+                               			<c:otherwise>
+                               				${game.visitorScore} - ${game.homeScore}
+                               			</c:otherwise>
+                               		</c:choose>
+
                 					<c:choose>
 										<c:when test="${game.SO =='Y'}">
 											SO

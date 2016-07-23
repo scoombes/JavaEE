@@ -28,7 +28,7 @@ import com.seanjohn.nhl.data.GenericIO;
  * Servlet Filter implementation class Authenticate
  */
 @WebFilter(
-		urlPatterns = "/*",
+		urlPatterns = "/banana",
 		dispatcherTypes = DispatcherType.REQUEST,
 		filterName = "Authenticate",
 		description = "Require that each session provide the database password"
