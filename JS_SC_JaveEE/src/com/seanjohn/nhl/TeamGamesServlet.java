@@ -25,7 +25,7 @@ import com.seanjohn.nhl.data.ScheduleHIO;
 /**
  * Servlet implementation class CompleteGamesServlet
  */
-@WebServlet({"/completegames", "/CompleteGames", "/upcominggames", "/UpcomingGames"})
+@WebServlet({"/teamschedule"})
 public class TeamGamesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -36,22 +36,10 @@ public class TeamGamesServlet extends HttpServlet {
 	    response.setHeader("X-Servlet-Name", getServletName());
 	    
 	    String path = request.getRequestURI().substring(request.getContextPath().length());
-	    boolean checkUpcoming = path.equalsIgnoreCase("/CompleteGames");
 	    ScheduleHIO sched = new ScheduleHIO();
 	    List<Game> games;
-	    try {
-	    	if (checkUpcoming) {
-				games = sched.getUpcomingGames();
-	    	} else {
-				games = sched.getCompletedGames();
-	    	}
-		} catch (SQLException e) {
-			getServletContext().log(getServletName(), e);
-			games = new ArrayList<Game>();
-		}
-	    
-	    request.setAttribute("games", games);
-	    request.setAttribute("title", checkUpcoming ? "Upcoming Games" : "Completed Games");
+
+
         String url = "/games.jsp";
         ServletContext sc = getServletContext();
         sc.getRequestDispatcher(url).forward(request, response);
