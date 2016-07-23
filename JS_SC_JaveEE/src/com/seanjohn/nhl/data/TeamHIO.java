@@ -6,6 +6,7 @@
 
 package com.seanjohn.nhl.data;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -17,7 +18,7 @@ import com.seanjohn.nhl.business.Team;
 
 public class TeamHIO extends HibernateIO {
 
-	public List<Team> getTeams() {
+	public List<Team> getTeams() throws SQLException {
 		return em.createQuery("select t from Team t", Team.class)
 				.getResultList();
 	}
@@ -30,7 +31,7 @@ public class TeamHIO extends HibernateIO {
 				.setParameter("teamId", teamId).getSingleResult();
 	}
 
-	public List<Standing> getStandings() {
+	public List<Standing> getStandings() throws SQLException{
 		List<Game> games = em.createQuery("select g from Game g", Game.class)
 				.getResultList();
 		HashMap<Team, Standing> scores = new HashMap<Team, Standing>();

@@ -1,5 +1,5 @@
 /*
- *   Document   : StandingsServlet.java
+ *   Document   : TeamsServlet.java
  *   Created on : July 23, 2016
  *   Authors    : John Steel & Sean Coombes
  */
@@ -18,37 +18,37 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.seanjohn.nhl.business.Standing;
-import com.seanjohn.nhl.data.TeamHIO;
+import com.seanjohn.nhl.business.Arena;
+import com.seanjohn.nhl.data.ArenaHIO;
 
 /**
- * Servlet implementation class StandingsServlet
+ * Servlet implementation class TeamsServlet
  */
-@WebServlet({"/standings", "/Standings"})
-public class StandingsServlet extends HttpServlet {
+@WebServlet({"/arenas", "/Arenas"})
+public class ArenaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    response.setHeader("X-Servlet-Name", getServletName());
 	    
-		// gets team standings from TeamHIO
-		TeamHIO teamIO = new TeamHIO();
-		List<Standing> teams;
-		try {
-			teams = teamIO.getStandings();
+	    //gets lists of teams from derby database via TeamIO class
+	    ArenaHIO arenaIO = new ArenaHIO();
+	    List<Arena> arenas;
+	    try {
+			arenas = arenaIO.getArenas();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			teams = new ArrayList<Standing>();
+			ServletContext context = this.getServletContext();
+			context.log(getServletName(), e);
+			arenas = new ArrayList<Arena>();
 		}
-
-		// adds list of teams to be used on jsp
-		request.setAttribute("teams", teams);
-		String url = "/standings.jsp";
-		ServletContext sc = getServletContext();
-		sc.getRequestDispatcher(url).forward(request, response);
+	    
+	    //adds to team to an attribute to be used in the jsp
+	    request.setAttribute("arenas", arenas);
+        String url = "/arenas.jsp";
+        ServletContext sc = getServletContext();
+        sc.getRequestDispatcher(url).forward(request, response);
 	}
 }

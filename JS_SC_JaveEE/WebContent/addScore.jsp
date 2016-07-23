@@ -1,6 +1,6 @@
 <%-- 
-    games.jsp
-	Created On: June 15th 23016
+    addScore.jsp
+	Created On: July 26, 2016
     Sean Coombes & John Steel
 --%>
 

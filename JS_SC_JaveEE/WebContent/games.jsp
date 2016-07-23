@@ -1,9 +1,8 @@
 <%-- 
     games.jsp
-	Created On: June 15th 23016
+	Created On: July 26, 2016
     Sean Coombes & John Steel
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>

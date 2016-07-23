@@ -1,6 +1,6 @@
 /*
- *   Document   : ScheduleIO.java
- *   Created on : June 15, 2016
+ *   Document   : ScheduleHIO.java
+ *   Created on : July 23, 2016
  *   Authors    : John Steel & Sean Coombes
  */
 
