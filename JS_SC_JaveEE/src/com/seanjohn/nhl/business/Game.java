@@ -99,19 +99,19 @@ public class Game implements Serializable {
 		this.visitor = visitor;
 	}
 
-	public long getHomeScore() {
+	public Long getHomeScore() {
 		return homeScore;
 	}
 
-	public void setHomeScore(long homeScore) {
+	public void setHomeScore(Long homeScore) {
 		this.homeScore = homeScore;
 	}
 
-	public long getVisitorScore() {
+	public Long getVisitorScore() {
 		return visitorScore;
 	}
 
-	public void setVisitorScore(long visitorScore) {
+	public void setVisitorScore(Long visitorScore) {
 		this.visitorScore = visitorScore;
 	}
 

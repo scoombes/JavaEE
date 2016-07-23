@@ -17,7 +17,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import com.seanjohn.nhl.business.Game;
 import com.seanjohn.nhl.data.ScheduleHIO;
@@ -36,7 +35,7 @@ public class GamesServlet extends HttpServlet {
 	    response.setHeader("X-Servlet-Name", getServletName());
 	    
 	    String path = request.getRequestURI().substring(request.getContextPath().length());
-	    boolean checkUpcoming = path.equalsIgnoreCase("/CompleteGames");
+	    boolean checkUpcoming = path.equalsIgnoreCase("/UpcomingGames");
 	    ScheduleHIO sched = new ScheduleHIO();
 	    List<Game> games;
 	    try {
