@@ -1,6 +1,6 @@
 /*
- *   Document   : CompleteGamesServlet.java
- *   Created on : June 15, 2016
+ *   Document   : AddScoreServlet.java
+ *   Created on : July 23, 2016
  *   Authors    : John Steel & Sean Coombes
  */
 
@@ -23,7 +23,7 @@ import com.seanjohn.nhl.data.GameHIO;
  * Servlet implementation class CompleteGamesServlet
  */
 @WebServlet({ "/addscore" })
-public class addScoreServlet extends HttpServlet {
+public class AddScoreServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
