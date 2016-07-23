@@ -1,3 +1,9 @@
+/*
+ *   Document   : PlayerStats.java
+ *   Created on : July 23, 2016
+ *   Authors    : John Steel & Sean Coombes
+ */
+
 package com.seanjohn.nhl.business;
 
 import java.io.Serializable;

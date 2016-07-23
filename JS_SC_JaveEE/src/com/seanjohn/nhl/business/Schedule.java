@@ -1,6 +1,6 @@
 /*
  *   Document   : Schedule.java
- *   Created on : June 15, 2016
+ *   Created on : July 23, 2016
  *   Authors    : John Steel & Sean Coombes
  */
 

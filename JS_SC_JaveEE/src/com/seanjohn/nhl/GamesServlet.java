@@ -1,6 +1,6 @@
 /*
- *   Document   : CompleteGamesServlet.java
- *   Created on : June 15, 2016
+ *   Document   : GamesServlet.java
+ *   Created on : July 23, 2016
  *   Authors    : John Steel & Sean Coombes
  */
 
