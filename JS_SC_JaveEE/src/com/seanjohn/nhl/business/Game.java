@@ -38,8 +38,8 @@ public class Game implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "visitor")
 	private Team visitor;
-	private long homeScore;
-	private long visitorScore;
+	private Long homeScore;
+	private Long visitorScore;
 	private char OT;
 	private char SO;
 

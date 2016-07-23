@@ -18,7 +18,7 @@
     <jsp:body>
         <div class="row">
             <div class="col-lg-12 text-center">
-            	<h1>Completed Games</h1>
+            	<h1>${title}</h1>
                <table class="table table-bordered">
 			    <thead>
 			      <tr>
@@ -31,14 +31,14 @@
 			      </tr>
 			    </thead>
 			    <tbody>
-			     <c:forEach items="${upcoming}" var="game">
+			     <c:forEach items="${games}" var="game">
                 			<tr>
-                				<td>${game.gamedate}</td>
-                				<td>${game.visitor} @ ${game.home}</td>
-                				<td>${game.visitorscore} - ${game.homescore}</td>
-                				<td>${game.ot}</td>
-                				<td>${game.so}</td>
-                				<td>${game.arena}</td>
+                				<td>${game.gameDate}</td>
+                				<td>${game.visitor.teamName} @ ${game.home.teamName}</td>
+                				<td>${game.visitorScore} - ${game.homeScore}</td>
+                				<td>${game.OT}</td>
+                				<td>${game.SO}</td>
+                				<td>${game.arena.arenaName}</td>
                 			</tr>
                 		</c:forEach>
 			    </tbody>
