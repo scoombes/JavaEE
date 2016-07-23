@@ -23,20 +23,15 @@
 			    <thead>
 			      <tr>
 			        <th>Team</th>
-			        <th>Head Coach</th>
-			        <th>Assistant Coach</th>
-			        <th>Fitness Trainer</th>
-			        <th>Manager</th>
+			        <th>Schedule</th>
+			        
 			      </tr>
 			    </thead>
 			    <tbody>
 			     <c:forEach items="${teams}" var="team">
                 			<tr>
                 				<td><a href="roster?teamid=${team.teamId}">${team.teamname}</a></td>
-                				<td>${team.headCoach.firstName} ${team.headCoach.lastName}</td>
-                				<td>${team.asstcoach.firstName} ${team.asstcoach.lastName}</td>
-                				<td>${team.trainer.firstName} ${team.trainer.lastName}</td>
-                				<td>${team.manager.firstName} ${team.manager.lastName}</td>
+                				<td><a href="teamschedule?teamid=${team.teamId}">Schedule</a></td>
                 			</tr>
                 		</c:forEach>
 			    </tbody>

@@ -20,29 +20,54 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.seanjohn.nhl.business.Game;
+import com.seanjohn.nhl.business.Roster;
+import com.seanjohn.nhl.business.Staff;
+import com.seanjohn.nhl.business.Team;
+import com.seanjohn.nhl.data.RosterHIO;
 import com.seanjohn.nhl.data.ScheduleHIO;
+import com.seanjohn.nhl.data.ScheduleIO;
+import com.seanjohn.nhl.data.TeamHIO;
 
 /**
  * Servlet implementation class CompleteGamesServlet
  */
-@WebServlet({"/teamschedule"})
+@WebServlet({ "/teamschedule" })
 public class TeamGamesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	    response.setHeader("X-Servlet-Name", getServletName());
-	    
-	    String path = request.getRequestURI().substring(request.getContextPath().length());
-	    ScheduleHIO sched = new ScheduleHIO();
-	    List<Game> games;
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		response.setHeader("X-Servlet-Name", getServletName());
+		String teamId = request.getParameter("teamid");
+		String title = "";
+		List<Game> games;
 
+		if (teamId == null) {
+			// there was an error
+		} else {
 
-        String url = "/games.jsp";
-        ServletContext sc = getServletContext();
-        sc.getRequestDispatcher(url).forward(request, response);
+			ScheduleHIO scheduleIO = new ScheduleHIO();
 
+			try {
+				TeamHIO teamIO = new TeamHIO();
+				title = teamIO.getTeam(teamId).getTeamName() + "'s Schedule";
+				games = scheduleIO.getTeamSchedule(teamId);
+			} catch (SQLException e) {
+				ServletContext context = this.getServletContext();
+				context.log(getServletName(), e);
+				games = new ArrayList<Game>();
+			}
+
+			request.setAttribute("games", games);
+			request.setAttribute("title", title);
+			String url = "/games.jsp";
+			ServletContext sc = getServletContext();
+			sc.getRequestDispatcher(url).forward(request, response);
+
+		}
 	}
 }
