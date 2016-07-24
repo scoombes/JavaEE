@@ -17,33 +17,46 @@
     </jsp:attribute>
 	<jsp:body>    
         <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 col-md-12 text-center">
                 <table class="table table-striped">
-                	<thead>
-                		<tr>
-                			<th>Jersey</th>
-                			<th>Last Name</th>
-                			<th>First Name</th>
-                			<th>Position</th>
-                			<th>Height</th>
-                			<th>Weight</th>
-                			<th>Hometown</th>
-                			<th>Province/State</th>
-                			<th>School</th>
-                		</tr>             		
-                	</thead>
                 	<tbody>
+                        <tr>
+                            <th>Jersey</th>
+                            <td>${rosterPlayer.jersey}</td>
+                        </tr>
                			<tr>
-       						<td>${rosterPlayer.jersey}</td>
+                            <th>Last Name</th>
        						<td>${rosterPlayer.player.lastName}</td>
-       						<td>${rosterPlayer.player.firstName}</td>
-       						<td>${rosterPlayer.position}</td>
-       						<td>${rosterPlayer.player.height}</td>
-       						<td>${rosterPlayer.player.weight}</td>
-       						<td>${rosterPlayer.player.city}</td>
-       						<td>${rosterPlayer.player.state_province}</td>
-       						<td>${rosterPlayer.player.school}</td>
        					</tr>
+                        <tr>
+                            <th>First Name</th>
+                            <td>${rosterPlayer.player.firstName}</td>
+                        </tr>
+                        <tr>
+                            <th>Position</th>
+                            <td>${rosterPlayer.position}</td>
+                        </tr>
+                        <tr>
+                            <th>Height</th>
+                            <td>${rosterPlayer.player.height}</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>${rosterPlayer.player.weight}</td>
+                        </tr>
+                        <tr>
+                            <th>Hometown</th>
+                            <td>${rosterPlayer.player.city}</td>
+                        </tr>
+                        <tr>
+                            <th>Province/State</th>
+                            <td>${rosterPlayer.player.state_province}</td>
+                        </tr>
+                        <tr>
+                            <th>School</th>
+                            <td>${rosterPlayer.player.school}</td>
+                        </tr>
                 	</tbody>
                 </table>
             </div>
