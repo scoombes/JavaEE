@@ -14,7 +14,7 @@ import com.seanjohn.nhl.business.Arena;
 public class ArenaHIO extends HibernateIO {
 
 	public List<Arena> getArenas() throws SQLException {
-		return em.createQuery("select a from Arena a"
+		return em.createQuery("select a from Arena a "
 					+ "ORDER BY a.arenaName ", Arena.class)
 				.getResultList();
 	}
