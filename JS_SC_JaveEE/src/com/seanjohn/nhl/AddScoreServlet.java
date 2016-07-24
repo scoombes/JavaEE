@@ -65,68 +65,58 @@ public class AddScoreServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-				long homeScore;
-				long visitorScore;
-				String OT = request.getParameter("OT");
-				String SO = request.getParameter("SO");
-				
-				Long gameId = null;
-				String teamId = request.getParameter("teamId");
-				GameHIO gameIO;
-				String url = "/upcominggames";
-				
-				
-				try {
-					homeScore = Long.parseLong(request.getParameter("homeScore"));
-					visitorScore = Long.parseLong(request.getParameter("visitorScore"));
-					gameId = Long.parseLong(request.getParameter("gameId"));
-				} catch (Exception e) {
-					homeScore = 0;
-					visitorScore = 0;
-				}
-				
-				if(gameId == null){
-					//there was an error with getting the id
-				}else{
-					try {
-						gameIO = new GameHIO();
-						Game game = gameIO.getGame(gameId);
-						
-						game.setHomeScore(homeScore);
-						game.setVisitorScore(visitorScore);
-						
-						if(OT == "on"){
-							game.setOT('Y');	
-						}else{
-							game.setOT('N');
-						}
-						
-						if(SO == "on"){
-							game.setOT('Y');
-							game.setSO('Y');
-						}else{
-							game.setSO('N');
-						}
-						
-						gameIO.updateGame(game);
+		long homeScore;
+		long visitorScore;
 
-					} catch (SQLException e) {
-						ServletContext context = this.getServletContext();
-						context.log(getServletName(), e);
-					}	
+		Long gameId = null;
+		String teamId = request.getParameter("teamId");
+		GameHIO gameIO;
+		String url = "/upcominggames";
+
+		try {
+			homeScore = Long.parseLong(request.getParameter("homeScore"));
+			visitorScore = Long.parseLong(request.getParameter("visitorScore"));
+			gameId = Long.parseLong(request.getParameter("gameId"));
+		} catch (Exception e) {
+			homeScore = 0;
+			visitorScore = 0;
+		}
+
+		if (gameId == null) {
+			// there was an error with getting the id
+		} else {
+			try {
+				gameIO = new GameHIO();
+				Game game = gameIO.getGame(gameId);
+
+				game.setHomeScore(homeScore);
+				game.setVisitorScore(visitorScore);
+
+				if (request.getParameterMap().containsKey("OT")) {
+					game.setOT('Y');
+				} else {
+					game.setOT('N');
 				}
-				
-				if(teamId != null){
-					url = "teamschedule?teamid=" + teamId;
+
+				if (request.getParameterMap().containsKey("SO")) {
+					game.setOT('Y');
+					game.setSO('Y');
+				} else {
+					game.setSO('N');
 				}
-				
-				response.sendRedirect(url);
-				// ServletContext sc = getServletContext();
-				// sc.getRequestDispatcher(url).forward(request, response);
-				
-				
-				
-				
-			    
+
+				gameIO.updateGame(game);
+
+			} catch (SQLException e) {
+				ServletContext context = this.getServletContext();
+				context.log(getServletName(), e);
 			}
+		}
+
+		if (teamId != null && !teamId.isEmpty()) {
+			url = "/teamschedule?teamid=" + teamId;
+		}
+		
+		response.sendRedirect(request.getContextPath() + url);
+	}
 }
