@@ -27,7 +27,7 @@ import javax.servlet.http.HttpSession;
  * Servlet Filter implementation class Authenticate
  */
 @WebFilter(
-		urlPatterns = "/banana",
+		urlPatterns = "/*",
 		dispatcherTypes = DispatcherType.REQUEST,
 		filterName = "Authenticate",
 		description = "Require that each session provide the database password"
