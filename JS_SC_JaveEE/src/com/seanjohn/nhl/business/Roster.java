@@ -31,7 +31,7 @@ public class Roster implements Serializable {
 	private Team team;
 	private String position;
 	private Long jersey;
-	@OneToMany
+	@OneToMany(mappedBy="roster")
 	private List<PlayerStats> playerStats;
 	
 	public int getRosterId() {

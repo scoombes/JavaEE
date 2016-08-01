@@ -18,10 +18,10 @@ public class GameSessionBean {
 			throw new NullAttributeException("team", "team object is null");
 		}
 
-		// checks that the supplied team player in the supplied game
+		// checks that the supplied team played in the supplied game
 		if (!team.getTeamName().equals(game.getHome().getTeamname())
 				&& !team.getTeamname().equals(game.getVisitor().getTeamName())) {
-			out = "supplied team did not play this game";
+			return "supplied team did not play this game";
 		}
 
 		// if the game has been played

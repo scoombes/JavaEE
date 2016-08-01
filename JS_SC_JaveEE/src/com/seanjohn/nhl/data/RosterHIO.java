@@ -9,6 +9,7 @@ package com.seanjohn.nhl.data;
 import java.sql.SQLException;
 import java.util.List;
 
+import com.seanjohn.nhl.business.PlayerStats;
 import com.seanjohn.nhl.business.Roster;
 import com.seanjohn.nhl.business.Team;
 
@@ -37,5 +38,10 @@ public class RosterHIO extends HibernateIO {
 						Roster.class).setParameter("playerId", playerId)
 				.getSingleResult();
 		return rosterPlayer;
+	}
+	
+	public List<PlayerStats> getPlayerStats() throws SQLException {
+		return em.createQuery("select t from PlayerStats t", PlayerStats.class)
+				.getResultList();
 	}
 }
