@@ -16,11 +16,12 @@ public class ScheduleSessionBean {
 	}
 	
 	public String getNextGame(Team team, Schedule schedule) {
+		String teamID = team.getTeamId();
 		for (Game game : schedule.getGames()) {
-			if (game.getHome().equals(team) || game.getVisitor().equals(team)) {
+			if (game.getHome().getTeamId().equals(teamID) || game.getVisitor().getTeamId().equals(teamID)) {
 				return game.getGameDate().toString();
 			}
 		}
-		return "";
+		return team.getTeamname() + " Had no games?!?";
 	}
 }

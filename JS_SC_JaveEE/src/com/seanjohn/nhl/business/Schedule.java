@@ -26,9 +26,8 @@ public class Schedule implements Serializable {
 	private String season;
 	private String schedulename;
 	private String sponsor;
-	@OneToMany
-	private List<Game> games;
-	@OneToMany
+	@OneToMany(mappedBy="schedule")
+	private List<Game> games; 
 	private List<PlayerStats> playerStats;
 	
 	public List<PlayerStats> getPlayerStats() {
