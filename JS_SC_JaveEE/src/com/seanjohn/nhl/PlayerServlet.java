@@ -46,20 +46,24 @@ public class PlayerServlet extends HttpServlet {
 		} catch (Exception e) {
 			pId = 0;
 		}
-		
+
 		if (pId == 0) {
 			// there was an error
 		} else {
-
+			RosterHIO rosterIO = new RosterHIO();
 			try {
-				RosterHIO rosterIO = new RosterHIO();
 				player = rosterIO.getPlayer(pId);
-				playerStats = player.getPlayerStats().get(0);
-
 			} catch (Exception e) {
 				ServletContext context = this.getServletContext();
 				context.log(getServletName(), e);
 				player = new Roster();
+			}
+			
+			try {
+				playerStats = player.getPlayerStats().get(0);
+			} catch (Exception e) {
+				ServletContext context = this.getServletContext();
+				context.log(getServletName(), e);
 				playerStats = new PlayerStats();
 			}
 
