@@ -1,4 +1,5 @@
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.seanjohn.nhl.business.Player;
@@ -14,12 +15,15 @@ public class TestingGround {
 
 		RosterHIO rosterIO = new RosterHIO();
 		Roster player;
+		List<PlayerStats> pslist;
 		try {
-			player = rosterIO.getPlayer(100407);
+			player = rosterIO.getPlayer(100108);
+			pslist = rosterIO.getPlayerStats();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			player = new Roster();
+			pslist = new ArrayList<PlayerStats>();
 		}
 		
 		System.out.println(player.getPlayer().getLastName());
@@ -28,6 +32,10 @@ public class TestingGround {
 		List<PlayerStats> ps2 = player.getPlayerStats();
 		
 		
+		for(PlayerStats ps3 : pslist){
+			System.out.println(ps3.getRoster().getTeam().getTeamName());
+			
+		}
 		
 		for(PlayerStats pstats: ps){
 			System.out.println("ONE");

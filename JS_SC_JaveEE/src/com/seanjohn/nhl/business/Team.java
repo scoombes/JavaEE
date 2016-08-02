@@ -36,6 +36,7 @@ public class Team implements Serializable {
 	private Staff manager;
 	@OneToMany
 	private List<Game> games;
+	
 	@OneToMany(mappedBy="team")
 	private List<Roster> roster;
 

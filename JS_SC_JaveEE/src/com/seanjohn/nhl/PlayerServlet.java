@@ -7,7 +7,9 @@
 package com.seanjohn.nhl;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
+import javax.enterprise.inject.New;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,6 +17,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.seanjohn.nhl.business.PlayerStats;
 import com.seanjohn.nhl.business.Roster;
 import com.seanjohn.nhl.data.RosterHIO;
 
@@ -36,12 +39,14 @@ public class PlayerServlet extends HttpServlet {
 		String playerId = request.getParameter("playerid");
 		long pId;
 		Roster player;
+		PlayerStats playerStats;
 
 		try {
 			pId = Long.parseLong(playerId);
 		} catch (Exception e) {
 			pId = 0;
 		}
+		
 		if (pId == 0) {
 			// there was an error
 		} else {
@@ -49,14 +54,17 @@ public class PlayerServlet extends HttpServlet {
 			try {
 				RosterHIO rosterIO = new RosterHIO();
 				player = rosterIO.getPlayer(pId);
+				playerStats = player.getPlayerStats().get(0);
 
 			} catch (Exception e) {
 				ServletContext context = this.getServletContext();
 				context.log(getServletName(), e);
 				player = new Roster();
+				playerStats = new PlayerStats();
 			}
 
 			request.setAttribute("rosterPlayer", player);
+			request.setAttribute("playerStats", playerStats);
 		}
 
 		String url = "/player.jsp";
