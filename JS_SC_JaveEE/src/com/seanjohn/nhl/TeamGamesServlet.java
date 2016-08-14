@@ -59,7 +59,7 @@ public class TeamGamesServlet extends HttpServlet {
 			request.setAttribute("games", games);
 			request.setAttribute("title", title);
 			request.setAttribute("highlightedTeam", teamId);
-			String url = "/games.jsp";
+			String url = "/teamGames.jsp";
 			ServletContext sc = getServletContext();
 			sc.getRequestDispatcher(url).forward(request, response);
 
