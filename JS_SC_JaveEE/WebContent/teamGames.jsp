@@ -1,6 +1,6 @@
 <%-- 
-    games.jsp
-	Created On: July 26, 2016
+    teamGames.jsp
+	Created On: August 14, 2016
     Sean Coombes & John Steel
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

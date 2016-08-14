@@ -1,3 +1,9 @@
+/*
+ *   Document   : TeamGame.java
+ *   Created on : August 14, 2016
+ *   Authors    : John Steel & Sean Coombes
+ */
+
 package com.seanjohn.nhl.business;
 
 import java.io.Serializable;
@@ -5,6 +11,7 @@ import java.sql.Date;
 import java.sql.Time;
 
 public class TeamGame implements Serializable {
+	private static final long serialVersionUID = 1L;
 	private Date gameDate;
 	private Time gameTime;
 	private long gameId;

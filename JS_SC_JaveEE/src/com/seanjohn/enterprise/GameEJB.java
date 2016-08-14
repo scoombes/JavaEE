@@ -1,3 +1,8 @@
+/*
+ *   Document   : GameEJB.java
+ *   Created on : August 14, 2016
+ *   Authors    : John Steel & Sean Coombes
+ */
 package com.seanjohn.enterprise;
 
 import javax.ejb.LocalBean;
