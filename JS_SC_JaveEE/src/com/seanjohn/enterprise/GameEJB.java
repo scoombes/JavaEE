@@ -36,7 +36,7 @@ public class GameEJB {
 		// checks that the supplied team played in the supplied game
 		if (!team.getTeamName().equals(game.getHome().getTeamname())
 				&& !team.getTeamname().equals(game.getVisitor().getTeamName())) {
-			return "supplied team did not play this game";
+			return "";
 		}
 
 		// if the game has been played

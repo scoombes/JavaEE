@@ -23,7 +23,7 @@
 			      <tr>
                     <th>Date</th>
                     <th>Time</th>
-			        <th>Matchup</th>
+			        <th>Opponent</th>
 			        <th>Score</th>
 			        <th>Arena</th>
 			      </tr>
@@ -33,32 +33,18 @@
                 			<tr>
                                 <td>${game.gameDate}</td>
                                 <td>${game.gameTime}</td>
-                                <td>
-                                    <span class="${game.visitor.teamId == highlightedTeam ? 'bg-primary' : ''}">${game.visitor.teamName}</span>
-                                    @
-                                    <span class="${game.home.teamId == highlightedTeam ? 'bg-primary' : ''}">${game.home.teamName}</span>
-                               </td>
-                               <td>
+                                <td>${game.visitorTeam}</td>
+                               	<td>
                                		<c:choose>
-                               			<c:when test="${game.visitorScore == null && g.homescore == null}">
-                               				<a href="addscore?gameid=${game.gameId}&teamid=${highlightedTeam}">Add Score</a>
+                               			<c:when test="${empty game.score}">
+                               				<a href="addscore?gameid=${game.gameId}&teamid=${game.teamId}">Add Score</a>
                                			</c:when>                          			
                                			<c:otherwise>
-                               				${game.visitorScore} - ${game.homeScore}
+                               				${game.score}
                                			</c:otherwise>
-                               		</c:choose>
-
-                					<c:choose>
-										<c:when test="${game.SO =='Y'}">
-											SO
-										</c:when>
-										<c:when test="${(game.SO =='N') && (game.OT == 'Y')}">
-											OT
-										</c:when>
-                					</c:choose> 
-                				
+                               		</c:choose>         				
                 				</td>
-                				<td>${game.arena.arenaName}</td>
+                				<td>${game.arena}</td>
                 			</tr>
                 		</c:forEach>
 			    </tbody>
