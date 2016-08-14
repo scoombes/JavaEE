@@ -7,9 +7,7 @@
 package com.seanjohn.nhl;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
-import javax.enterprise.inject.New;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
