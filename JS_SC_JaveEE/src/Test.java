@@ -6,9 +6,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import com.seanjohn.enterprise.ScheduleSessionBean;
 import com.seanjohn.nhl.business.Game;
 import com.seanjohn.nhl.business.Schedule;
-import com.seanjohn.nhl.business.ScheduleSessionBean;
 import com.seanjohn.nhl.business.Team;
 import com.seanjohn.nhl.data.ScheduleHIO;
 import com.seanjohn.nhl.data.TeamHIO;

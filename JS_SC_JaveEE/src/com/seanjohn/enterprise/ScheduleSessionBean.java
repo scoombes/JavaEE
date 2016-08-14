@@ -1,12 +1,16 @@
 /**
  * 
  */
-package com.seanjohn.nhl.business;
+package com.seanjohn.enterprise;
 
 import java.text.SimpleDateFormat;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+
+import com.seanjohn.nhl.business.Game;
+import com.seanjohn.nhl.business.Schedule;
+import com.seanjohn.nhl.business.Team;
 
 @Stateless
 public class ScheduleSessionBean {

@@ -1,8 +1,11 @@
-package com.seanjohn.nhl.business;
+package com.seanjohn.enterprise;
 
 import javax.ejb.Stateless;
 
 import org.apache.taglibs.standard.tag.common.core.NullAttributeException;
+
+import com.seanjohn.nhl.business.Game;
+import com.seanjohn.nhl.business.Team;
 
 @Stateless
 public class GameSessionBean {
