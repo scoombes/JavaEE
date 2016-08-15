@@ -24,6 +24,7 @@
                 <thead>
                   <tr>
                     <th>Team</th>
+                    <th>Next Game</th>
                     <th>Points</th>
                     <th>Wins</th>
                     <th>Losses</th>
@@ -34,6 +35,7 @@
                  <c:forEach items="${teams}" var="team">
                             <tr>
                                 <td><a href="roster?teamid=${team.team.teamId}">${team.team.teamName}</a></td>
+                                <td>${scheduleEJB.getNextGame(team.team, schedule)}</td>
                                 <td>${team.points}</td>
                                 <td>${team.wins}</td>
                                 <td>${team.losses}</td>

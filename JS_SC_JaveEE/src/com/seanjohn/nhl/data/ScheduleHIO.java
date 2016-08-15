@@ -9,7 +9,10 @@ package com.seanjohn.nhl.data;
 import java.sql.SQLException;
 import java.util.List;
 
+import javax.persistence.NoResultException;
+
 import com.seanjohn.nhl.business.Game;
+import com.seanjohn.nhl.business.Schedule;
 
 /**
  * @author black
@@ -45,5 +48,13 @@ public class ScheduleHIO extends HibernateIO {
 								+ "ORDER BY g.gameDate, g.gameTime", Game.class)
 				.setParameter("teamId", teamId).getResultList();
 
+	}
+	
+	public Schedule getSchedule(String season) {
+		try {
+			return em.createQuery("SELECT s FROM Schedule s WHERE s.season = :season", Schedule.class).setParameter("season", season).setMaxResults(1).getSingleResult();
+		} catch (NoResultException e) {
+			return null;
+		}
 	}
 }
