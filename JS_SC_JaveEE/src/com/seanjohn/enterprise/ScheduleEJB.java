@@ -1,7 +1,11 @@
+/*
+ *   Document   : ScheduleEJB.java
+ *   Created on : August 14, 2016
+ *   Authors    : John Steel & Sean Coombes
+ */
 package com.seanjohn.enterprise;
 
 import java.text.SimpleDateFormat;
-import java.util.List;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
@@ -14,9 +18,6 @@ import com.seanjohn.nhl.business.Game;
 import com.seanjohn.nhl.business.Schedule;
 import com.seanjohn.nhl.business.Team;
 
-/**
- * Session Bean implementation class ScheduleEJB
- */
 @Stateless
 @LocalBean
 public class ScheduleEJB {
